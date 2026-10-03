@@ -1,0 +1,31 @@
+name: Echohearts Rebearth - Manual Build Gate
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: unreal-manual-gate
+  cancel-in-progress: false
+jobs:
+  compile:
+    # Dedicated trusted runner; Unreal is not installed on windows-latest.
+    runs-on: [self-hosted, Windows, X64, unreal-5.8]
+    timeout-minutes: 120
+    env:
+      UE_ENGINE_ROOT: ${{ vars.UE_ENGINE_ROOT }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+          persist-credentials: false
+      - name: Check engine configuration
+        shell: pwsh
+        run: |
+          if (-not $env:UE_ENGINE_ROOT) { throw "Set repository variable UE_ENGINE_ROOT to the installed UE 5.8 path." }
+          git lfs install --local
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+      - name: Verify and compile Editor and Game
+        shell: pwsh
+        run: |
+          python 09_Technical/Tools/verify_unreal_gate.py preflight --engine-root "$env:UE_ENGINE_ROOT"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
