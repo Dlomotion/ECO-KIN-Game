@@ -1,0 +1,62 @@
+# Unreal Engine
+Binaries/
+Intermediate/
+Saved/
+.vs/
+.vscode/
+*.sln
+*.sln.DotSettings
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# Generated files
+DerivedDataCache/
+*.VC.db
+*.VC.db-shm
+*.VC.db-wal
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build outputs
+Build/
+dist/
+*.exe
+*.dll
+*.lib
+*.a
+*.so
+*.dylib
+
+# Game binaries
+Packages/
+Plugins/
+
+# Compiled blueprints
+*.uasset-bak
+*.umap-bak
+
+# Local development
+.env
+.env.local
+config.local.json
+
+# OS files
+Thumbs.db
+.DS_Store
+*.orig
+
+# Node modules (if using tools)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
