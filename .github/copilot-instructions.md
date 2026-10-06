@@ -556,3 +556,35 @@ Read [the complete implementation brief](../docs/ECHOHEARTS_COPILOT_MASTER_DEVEL
 Chat scratch image paths are not portable repository assets. Preserve original source bytes, approved identities and provenance. file_00000000ed0062309c7d3ff2fce23f01.png remains PENDING IMPORT and must not be claimed as recovered or used.
 
 Installing these instructions does not launch a Copilot agent task or establish runtime verification.
+
+
+## Cross-repository Copilot execution directive — 2026-10-06
+
+Treat the seven Echohearts repositories as one coordinated workspace with explicit authority boundaries:
+- Canon/contracts/Dex/publication authority: `Dlomotion/Echohearts-Rebearth`.
+- Executable Unreal Engine 5.8 runtime/build/test/evidence authority: `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-`.
+- Browser/web experience authority: `Dlomotion/echohearts-web`.
+- `Echohearts-Ecokins`, `ECO-KIN-Game`, `ECHOHEARTS-REBEARTH-`, and `Echohearts` are supporting/recovery repositories. Reconcile useful material with provenance; never silently create competing canon or runtime architecture.
+
+When asked to create or fix something:
+1. Inspect the relevant repository files, existing tests/workflows, issues/PR context, and authoritative contracts before editing.
+2. Trace the affected path end-to-end: input → validation/authority → state mutation → persistence/replication → UI/VFX/audio feedback.
+3. Prefer the smallest coherent fix that preserves established architecture. Remove or quarantine duplicate/obsolete implementations only when evidence establishes which path is authoritative.
+4. For UE5.8 C++, audit UHT/reflection, includes/modules/API macro, UObject lifetime/GC, delegates, Enhanced Input, GameplayTags/GAS where applicable, RPC ownership/authority, replication/prediction, serialization/save migration, async/thread safety, asset loading, World Partition, packaging and automation tests.
+5. For web code, audit type/build correctness, runtime errors, accessibility, responsive behavior, input handling, security boundaries, performance and production build behavior.
+6. Add or update tests/evidence contracts for bug fixes. A code edit alone is not proof.
+7. Never claim VERIFIED, compiled, packaged, production-ready, optimized, fixed, or complete without corresponding evidence from the relevant environment. Repository-static review is REPOSITORY-CHECKED; runtime claims remain NOT YET VERIFIED until executed.
+8. Never invent missing assets, files, test results, logs, APIs, canon facts, or runtime evidence. Surface the gap and implement the smallest safe prerequisite.
+9. Keep gameplay terminology canonical: Rebearth; Eco-Kin; Frequency Tamer/Core-Binder; A.E.G.I.S.; Vibrance, Density, Harmony, Purity; Anima-Link; Nature as a Legendary Humanoid-Kin with conditional Mutations. Do not substitute generic RPG attributes.
+10. AI narrative generation is advisory and schema-bound: Canon → Game Rules → World Simulation → Player Action → AI Interpretation → Validation → Gameplay Consequence. Generated output never directly overwrites authoritative game state.
+11. Optimize for fast onboarding and low cognitive overhead: the first playable loop must be understandable without studying deep lore.
+12. Do not copy proprietary game code, assets, characters, narrative expression, or franchise identity. External examples are engineering/design benchmarks only; preserve license/provenance when adapting open-source ideas.
+
+Cross-repository repair policy:
+- If a defect belongs to another authority repository, identify the correct repository and dependency instead of implementing a second competing solution locally.
+- Keep stable IDs and serialized contracts backward-compatible unless a documented migration accompanies the change.
+- Treat server-authoritative multiplayer, validation of client requests, save integrity, accessibility, and deterministic testability as release gates.
+- Preserve the 125-ID Permanent Eco-Kin Dex as production-roster authority; historical naming pools are references, not automatic promotions.
+- The immediate runtime evidence gate remains a real UE5.8 checkout with UHT/Development Editor compile, editor launch/PIE evidence, and Development Win64 packaging before runtime features are called VERIFIED.
+
+Use current official engine/platform documentation and reputable public technical sources when research is needed. Prefer primary sources. Record the source, license/provenance when code is involved, the specific takeaway, and how it changes Echohearts implementation.
