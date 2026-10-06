@@ -438,3 +438,113 @@ Report:
 
 The definition of done is evidence-based implementation, not merely generated code.
 The objective is a progressively playable, technically coherent, original **Echohearts: Rebearth** ecosystem rather than disconnected examples.
+
+## Universal platform + publication mandate — creator lock
+Build Echohearts as **one canonical Rebearth universe with platform-appropriate implementations**, not separate conflicting games.
+
+Plan, profile, and verify where supported/licensed across:
+- Windows PC;
+- console targets;
+- handheld/Steam Deck-class hardware;
+- macOS/Linux where the active UE branch supports them;
+- iOS/iPadOS;
+- Android;
+- cloud/streaming;
+- web/public companion surfaces;
+- EPUB/eBook and print/PDF publication surfaces.
+
+Platform optimization may change rendering budgets, LODs, texture pools, effects, vegetation density, UI scale, input prompts, asset streaming, background simulation frequency, and memory budgets. It must not silently change canonical rules, Eco-Kin identity, Anima-Link behavior, progression truth, or competitive fairness.
+
+Use scalable input/UI/assets, versioned saves, cloud conflict handling, suspend/resume safety, install chunking, performance profiles, accessibility, and recovery paths from the start.
+
+Keep repository-checkable platform contracts separate from actual device/runtime verification. A platform is not VERIFIED until the applicable build/package installs, launches, runs on representative target hardware, passes input/save/performance/accessibility checks, and produces evidence.
+
+For publishing:
+- use EPUB 3.3 as the stable production baseline unless a newer standard is explicitly adopted;
+- use semantic structure, navigation, metadata, accessible images/alt text, and reflowable typography where appropriate;
+- validate with an EPUB validator;
+- render-test on representative Kindle, Apple Books, Kobo, Google Play Books, phone, tablet, desktop, and accessibility-reader surfaces where available;
+- keep print/PDF validation separate;
+- never call an eBook VERIFIED from generated source alone.
+
+## Player-time / cognitive-cost design lock
+Design for players who may have jobs, children, interruptions, limited play windows, and long gaps between sessions.
+
+Required principles:
+- gameplay before vocabulary;
+- fast time-to-fun;
+- progressive disclosure instead of front-loaded lore/systems;
+- familiar action language before specialized Echohearts terminology;
+- solo play supports true pause wherever technically reasonable;
+- short sessions still produce meaningful progress;
+- returning players receive concise reorientation;
+- no essential progression should depend on forced constant attendance;
+- advanced depth can exist beneath a simple first-use experience;
+- never make the player study the universe before they can enjoy it.
+
+When evaluating a feature, explicitly consider:
+1. what does the player need to understand before using it?
+2. how long until the feature becomes enjoyable?
+3. can the player stop safely after 15–20 minutes?
+4. can a returning player understand what to do without rereading large lore dumps?
+
+## Vector-field plotter — implementation acceptance criteria
+When the creator requests the vector-field plotter, implement a real interactive browser tool, preferably in `Dlomotion/echohearts-web` unless another owner is explicitly chosen.
+
+Required:
+- approachable equation editor for `F(x,y)=<P(x,y),Q(x,y)>`;
+- safe parsing/validation of supported math expressions;
+- immediate redraw on valid equation changes;
+- presets including rotation, source, sink, saddle, shear, and wave-style fields;
+- arrow-density control;
+- particle/flow-line density control;
+- animated flow lines or particles;
+- play/pause;
+- reset/reseed;
+- hover **and tap** coordinate/vector readout;
+- bounded animation work;
+- reduced-motion support;
+- keyboard-accessible controls;
+- responsive mobile layout;
+- no NaN/Infinity rendering;
+- clear validation errors without destroying the last usable field.
+
+Treat this as a developer/math/flow-field visualization unless separately promoted into an in-world Echohearts device.
+
+## Choropleth world map — implementation acceptance criteria
+When the creator requests the choropleth world map, implement a real interactive browser visualization, preferably in `Dlomotion/echohearts-web`.
+
+Required:
+- authentic published country boundaries for a real-world map;
+- synthetic/sample values clearly labeled as sample data unless a real dataset is explicitly supplied;
+- metric switcher;
+- quantitative legend;
+- hover tooltip;
+- tap/click persistent country selection;
+- side panel with selected-country details;
+- pan;
+- zoom;
+- reset view;
+- smooth bounded interactions;
+- responsive layout;
+- keyboard/accessibility support where practical;
+- strong visual hierarchy;
+- graceful no-data states;
+- do not invent geographic boundaries or present synthetic values as factual real-world measurements.
+
+If adapted into Rebearth, replace real-world country geography with approved authored Rebearth regions rather than mixing real countries into canon.
+
+## CI regression rule for the infrastructure checker
+The historical failing job on run `37146815957`, job `112065388540`, checked out a commit whose workflow invoked:
+`python 09_Technical/Tools/verify_infrastructure.py infrastructure`
+before that script existed in the commit, producing `[Errno 2] No such file or directory`.
+
+The repair added the missing checker on a later commit and a later Actions run passed both `infrastructure` and `recovery-plan`.
+
+Preserve this lesson:
+- verify required files exist before executing them;
+- keep workflow paths and checked-out branch contents synchronized;
+- compare failing SHA vs fixed PR-head SHA;
+- do not repeatedly rerun an obsolete broken SHA and mistake that historical failure for failure of the current fix;
+- do not claim a passing static infrastructure check proves UE5.8 runtime behavior.
+
