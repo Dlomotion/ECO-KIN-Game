@@ -358,3 +358,24 @@ Recognize the user's A–Z programming-language study list as a **diagnostic/too
 - Preserve Echohearts canon and repository authority while repairing code. Never convert a passing static check into a claim of UE5.8 runtime verification.
 
 Canonical language-selection contract: `Dlomotion/Echohearts-Rebearth/09_Technical/LANGUAGE_DIAGNOSTIC_AND_TOOL_SELECTION_STANDARD_2026-10-06.md`.
+
+
+## Mission-system implementation contract — 2026-10-06
+
+When working on Echohearts missions/quests/objectives:
+- use stable `FName MissionId` / `ObjectiveId` as authority; positional/tracking integers are secondary tooling fields only;
+- separate immutable mission definitions from mutable runtime progress;
+- keep the system event-driven; do not add per-frame Tick polling for mission progression or UMG refresh;
+- UE5.8 runtime export macro is `ECHOHEARTS_API`;
+- a `UWorldSubsystem` does not replicate by itself: authoritative shared-world state needs a replicated owner/actor/component, and player-private mission state needs a PlayerState/profile-owned lane;
+- clients submit intent; they do not directly set Completed or grant rewards;
+- dialogue uses typed mission actions rather than parsing arbitrary display text into state changes;
+- completion/reward handling must be idempotent and transaction-safe;
+- prerequisite unlock evaluation must avoid re-entrant map mutation hazards;
+- one gameplay event may progress multiple active missions; do not stop after the first completion unless the authored rule explicitly says so;
+- mission examples containing `Blueprint_KinCage` must be corrected to non-coercive safety/field-safehold concepts before canon/runtime promotion;
+- do not load DataTable assets with constructor-only helper patterns from subsystem runtime initialization; use an authored asset/data injection path;
+- UMG updates are event/delegate driven on the game thread, not background-thread widget mutation.
+
+Canonical contract: `Dlomotion/Echohearts-Rebearth/04_Systems/MISSION_SYSTEM_ARCHITECTURE_2026-10-06.md`.
+The mission system is NOT YET UE5.8 VERIFIED and must not bypass the current foundation → Issue #10 → 4–6 Eco-Kin vertical-slice order.
