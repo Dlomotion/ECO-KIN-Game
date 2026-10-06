@@ -165,3 +165,45 @@ Do not copy tutorial/demo architecture blindly into Unreal production. Extract C
 - Outside games/repos are benchmark material only; never import protected designs, proprietary code/assets, franchise names, or franchise-specific creative expression.
 - Keep existing CI working and extend incrementally. Unreal evidence should progress from clean checkout/LFS -> project/targets -> UHT/UBT -> automation -> editor/PIE -> network tests when relevant -> cook/package -> packaged runtime -> profiling. Use **VERIFIED** only with evidence; otherwise **NOT YET VERIFIED** with missing proof.
 - Read source-of-truth docs and actual implementation before editing. Prefer focused patches. Reconcile conflicts toward `Dlomotion/Echohearts-Rebearth` for canon/contracts and `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-` for executable runtime/build evidence. Explain what was wrong, what changed, why safer/correcter, what was tested, and what remains unverified.
+
+## Unified Echohearts creation and code-repair directive — 2026-10-06
+
+This repository participates in one Echohearts: Rebearth production family. GitHub Copilot must help **create requested game work and repair code** inside established ownership and evidence gates.
+
+### Authority
+- `Dlomotion/Echohearts-Rebearth`: canon/story/design/system-contract authority.
+- `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-`: executable UE5.8 runtime/build/evidence authority.
+- `Dlomotion/echohearts-web`: web/presentation.
+- `Dlomotion/Echohearts-Ecokins`: Eco-Kin support/archive.
+- Other listed repositories are legacy/prototype/support unless an authority document says otherwise.
+
+Do not create duplicate runtime modules, GDDs, Dexes, canon, save schemas, networking stacks, or build pipelines.
+
+### Locked identity
+Preserve Rebearth; Eco-Kin; Frequency Tamer/Core-Binder; Nature as a Legendary Humanoid-Kin with conditional Mutations; Vibrance/Density/Harmony/Purity; Anima-Link; Huma-Link; A.E.G.I.S.; the 125-ID Permanent Dex; real-time third-person campaign combat; carry 8 / 3 active / no duplicates when the active data contract agrees; and UE5.8 C++ as production runtime.
+
+Older or candidate material—Meridian tech/Nodes, Time-Echo ruins, E.C.O. Sentinel, Cosmo-Seraph/AstraVore-class concepts, gardens/care, relic/idol/fusion/reversion ideas, branching endings—must pass canon review before implementation.
+
+### Create/fix code
+1. Read local instructions and source-of-truth docs.
+2. Inspect the actual implementation, call sites, tests, build scripts, workflows, branch, and related issues/PRs.
+3. Diagnose from compiler/UHT/UBT/UAT/test/runtime/log evidence.
+4. Consult current official docs and reputable public samples/issues when needed; never copy proprietary code or franchise identity.
+5. Fix the smallest coherent root cause and preserve compatibility unless migration is explicit.
+6. Add/update tests or validation.
+7. Run available checks and report what passed.
+8. Use **NOT YET VERIFIED** for claims lacking required runtime/build evidence.
+
+### Language roles
+- C++: UE5.8 gameplay/runtime, replication, AI, save/network systems.
+- TypeScript/JavaScript: web/browser/tooling; prefer TypeScript.
+- Python: build helpers, validators, automation, data/content processing.
+- C#: legacy/prototype/support tooling unless explicitly promoted by an authority contract.
+
+Audit lifecycle/reflection, Build.cs/modules, authority/RPCs, prediction/replication, validation, stable IDs, serialization/migrations, thread/UObject safety, async loading, World Partition, memory/performance, accessibility, security, packaging/platforms, cloud/save boundaries, UI, AI, animation/VFX/audio, and data/schema integrity as applicable.
+
+Trace gameplay changes end-to-end:
+**input -> authority -> state mutation -> replication/save -> UI/VFX/audio feedback**.
+
+Use `STATIC CHECK PASSED`, `REPOSITORY CONTRACT PASSED`, `CI PREFLIGHT PASSED`, and `NOT VERIFIED — UE BUILD/RUNTIME EVIDENCE REQUIRED`. Use `VERIFIED` only with matching evidence.
+
