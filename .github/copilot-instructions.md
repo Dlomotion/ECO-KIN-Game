@@ -556,3 +556,61 @@ Read [the complete implementation brief](../docs/ECHOHEARTS_COPILOT_MASTER_DEVEL
 Chat scratch image paths are not portable repository assets. Preserve original source bytes, approved identities and provenance. file_00000000ed0062309c7d3ff2fce23f01.png remains PENDING IMPORT and must not be claimed as recovered or used.
 
 Installing these instructions does not launch a Copilot agent task or establish runtime verification.
+
+## Unified project directive — 2026-10-06
+
+Apply these requirements together with this repository's role/authority rules above. Never let a support or legacy repository override the designated canon/runtime authorities.
+
+### Project ingestion and continuity
+- Treat all available Echohearts: Rebearth, ECO-KIN’S, Echohearts: Resonance Arena, game-development, game-creation, code, design, art, map, story, website, prototype, and technical material as one coordinated production program.
+- Reconcile new material into the existing source-of-truth hierarchy; do not create duplicate Master Bibles, Dexes, canon registries, gameplay frameworks, or parallel production workflows.
+- Preserve the 125-ID Permanent Eco-Kin Dex as current production-roster authority. Preserve the 1,120-name Master Historical Naming Pool as historical/archive authority. Never auto-promote all historical names to permanent species or playable forms.
+- Classify historical names as appropriate: Locked Canon, Evolution, Mutation/Form, Regional Variant, Pending Review, Rename/Legacy Alias, Non-Eco-Kin/System Entry, or Retired. Preserve provenance and do not silently delete recovered names.
+- Audit Eco-Kin records and art references for unnamed creatures. Assign an original Echohearts-appropriate name only when no established canonical name exists. Do not rename locked Eco-Kin without an explicit correction. Keep animal Eco-Kin animal-bodied and preserve approved anatomy/silhouettes.
+
+### Canon and gameplay engineering
+- Target Planet: Rebearth. Creature classification: Eco-Kin. Player class: Frequency Tamer / Core-Binder. Nature is a Legendary Humanoid-Kin with conditional Mutations, never a monarch title.
+- Core project attributes are Vibrance, Density, Harmony, and Purity. Do not substitute generic RPG Strength/Mana/Agility stats.
+- Preserve the Anima-Link bi-directional pulse loop: combat strain and Eco-Kin damage create tactical stamina/health consequences for the player.
+- Production runtime target is Unreal Engine 5 with clean object-oriented C++ and Blueprint-facing contracts, server-authoritative networking, secure cross-platform profile/cloud-sync architecture, accessibility, testing, profiling, and save/version migration.
+- Keep the 12 canonical Elements and other established canon/system boundaries intact unless a newer approved source-of-truth file explicitly supersedes them.
+
+### Code audit and correction
+- Study actual repository code before proposing or applying fixes. Inspect C++, Blueprint-facing APIs, Build.cs/Target.cs, configs, data schemas/assets, networking, replication, save systems, AI, inventory, workers/base systems, A.E.G.I.S., Eco-Kin runtime data, rendering/VFX/audio, tests, CI, and web code where relevant.
+- Fix compile/API correctness, ownership/lifetime/GC, null/error handling, RPC authority and validation, replication bandwidth/prediction/desync, threading, deterministic assumptions, save migrations, security/exploit surfaces, accessibility, CPU/GPU/network performance, duplicated systems, deprecated APIs, and false-pass tests.
+- Prefer evidence-based Unreal architecture: subsystems/components where appropriate, Gameplay Tags, delegates/events, Enhanced Input, UMG/CommonUI, Unreal Insights/stat/log categories, Automation/Functional Tests, and development-only diagnostic commands excluded or guarded from Shipping.
+- Unity/C# prototypes are reference material unless explicitly approved as a supported client. Port useful concepts into Unreal-native C++/Blueprint architecture rather than treating Unity managers as production authority.
+- Do not invent classes, assets, engine versions, project names, test results, build paths, or runtime evidence. Mark unexecuted claims NOT YET VERIFIED.
+
+### Git, LFS, branches, CI, and security
+- Audit .gitignore and .gitattributes against the actual repository. Use Git LFS for appropriate large binary assets, especially .uasset/.umap, with a binary-conflict/locking ownership strategy. Do not assume LFS makes binary assets mergeable.
+- Do not run git init on an existing repository. Do not blindly ignore the whole Build/ directory; determine what is generated versus source-controlled project material.
+- Work on short-lived feature/fix branches and PRs rather than routine direct development on main. Build/test first, inspect the diff/status, then commit intentional scoped changes.
+- Never force-push, rewrite history, discard local changes, delete branches, merge PRs, or alter repository rules without explicit authorization and evidence.
+- CI must use the actual .uproject name and verified engine environment. Checkout LFS when required. Separate fast validation from expensive cook/package work when practical.
+- Use least-privilege workflow permissions. Do not expose secrets. For public repositories, do not execute untrusted PR code on a persistent self-hosted developer workstation; prefer isolated/ephemeral runners or tightly controlled trusted workflows.
+
+### Research and external-code policy
+- When research is needed, prioritize current official Epic/Unreal/vendor documentation, then reputable engineering sources, technical papers/talks/postmortems, security/accessibility guidance, and public GitHub repositories.
+- Search actual compiler errors, symbols, APIs, and failure evidence rather than generic examples.
+- Before adapting public repository code/patterns, record source, date checked, license/provenance, engine/version relevance, security implications, and the Echohearts-specific adaptation.
+- Never copy proprietary code, protected characters, creatures, names, art, maps, narrative expression, or franchise identity. Use released games only for transferable engineering/design lessons and produce original Echohearts implementations.
+
+### Unreal asset/build workflow
+- For module/UHT/ABI-sensitive changes, prefer a clean full compile with the Editor closed rather than relying on Live Coding. Do not claim Live Coding universally corrupts projects.
+- Validate project/plugin/module configuration, compile using the actual installed Unreal toolchain, run relevant tests, inspect logs, launch runtime/editor checks, profile where relevant, then inspect Git status/diff before commit.
+- Treat shader/glitch/wireframe requirements as technical-art goals. Prefer parameterized materials/functions/instances and Niagara where suitable; use custom HLSL only when justified and profiled.
+- Verify shader permutations, PSO behavior, GPU time, memory, and target-platform compatibility before declaring rendering work production-ready.
+
+### Forms Registry
+- Implement historical/conditional Eco-Kin forms without duplicating permanent species IDs. A form references its authority EcoKinID and stores only intentional overrides plus trigger/eligibility metadata.
+- Preserve base identity when applying Shimmer Form, mutations, regional resonance configurations, or other conditional states. A form must not silently overwrite the base Eco-Kin.
+- Validate duplicate IDs/names, missing base references, illegal override combinations, save-version compatibility, network replication, and deterministic restoration of active forms.
+
+### Required evidence standard
+- Repository-checkable contracts are not runtime proof. Do not label Unreal compilation, UHT, PIE, packaging, networking, save recovery, hardware execution, cross-play, cloud save, animation, AI, gameplay, rendering, or performance VERIFIED without direct evidence.
+- For engineering work, report what was inspected, what changed, tests/builds actually run, failures/blockers, security implications, and the smallest next correction.
+- Preserve the project's copyright notice where appropriate: © 2026 Into Deep Studios and Donta L. Owens. All rights reserved. Do not claim copyright/trademark registration or filing completion without evidence.
+
+### Copilot operating objective
+When asked to create or fix code, first identify this repository's role, inspect the relevant existing implementation, reconcile it with the authoritative Echohearts contracts, implement the smallest production-safe correction on a branch, add/update tests and documentation, and state precisely what remains unverified. Favor a playable, maintainable vertical slice over uncontrolled feature breadth.
