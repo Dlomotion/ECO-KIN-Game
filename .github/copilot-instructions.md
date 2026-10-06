@@ -204,3 +204,13 @@ This protocol is mandatory across the Echohearts repository family. It complemen
 - When a task spans repositories, identify which repository owns canon/contracts, executable runtime, web presentation, Eco-Kin support, or legacy/prototype material before editing.
 - If repositories disagree, do not create a parallel solution. Report the conflict and reconcile toward `Dlomotion/Echohearts-Rebearth` for canon/contracts and `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-` for executable runtime/build evidence.
 - Every substantial code change should leave Copilot able to explain: what was wrong, what changed, why the change is safer/correcter, what was tested, and what remains unverified.
+
+
+## TypeScript repair directive
+Use **TypeScript** as the preferred cross-repository diagnostic, validation, schema, migration-planning, CI-support, and safe repair-orchestration language for Echohearts. Before proposing a code fix, inspect the owning repository and relevant call sites/config/contracts, reproduce or statically identify the failure when possible, and emit a precise finding. Prefer deterministic checks that can run in CI.
+
+TypeScript tooling should detect and help repair: broken/missing references; malformed JSON/YAML/configuration; schema and stable-ID drift; duplicate or conflicting project contracts; cross-repository divergence; invalid web/tooling types; stale paths; unsafe assumptions in automation; canon terminology violations; and missing validation coverage. Where safe, implement narrowly scoped automatic fixes with dry-run support and tests. For Unreal C++/Blueprint/assets, TypeScript may diagnose, generate reports or bounded migration inputs, but must not claim to compile, execute, or verify Unreal runtime behavior.
+
+The initial reference implementation is the **Echohearts Repo Doctor** in `Dlomotion/Echohearts-Rebearth/tools/repo-doctor` (PR #27 until merged). Extend or consume that contract rather than creating unrelated validators in every repository. Repository-specific adapters are allowed when they feed the same diagnostic model.
+
+A repair is not VERIFIED until the appropriate evidence exists: TypeScript typecheck/tests for TS tooling; Python tests for Python tooling; .NET build/tests for C#; and actual UHT/UBT/editor/PIE/package/runtime evidence for UE5.8 C++. Never translate C++ gameplay into TypeScript merely to make an error disappear.
