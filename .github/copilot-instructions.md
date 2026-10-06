@@ -724,3 +724,200 @@ Before accepting a new feature, ask:
 
 If not, deprioritize it until the core relationship-and-consequence experience is proven.
 
+## Eco-Kin encounter ranks, physical forms, trapping, Kindling, and roster study — locked 2026-10-06
+
+### Core classification rule
+Treat these as separate authored dimensions. Never collapse them into one generic rarity/evolution value:
+1. **Encounter Rank**
+2. **Physical/Form State**
+3. **Availability**
+4. **Encounter/Catch Method**
+
+A Common Eco-Kin may have a rare form. A Rare Eco-Kin may be peaceful. Alpha and Omega are encounter/ecology classes, not automatic evolution stages. Seasonal availability does not automatically mean Legendary.
+
+### Encounter Rank — required values
+Every bondable Eco-Kin or separately registered encounter must use exactly one primary encounter rank:
+- **Common** — stable population, broad habitat range, introductory/simple field interaction.
+- **Uncommon** — localized population or specialized ecology; habitat-specific tracking or Safehold.
+- **Rare** — low-density or condition-dependent population; may require weather, Purity, migration, time, restoration, puzzle, or advanced trap conditions.
+- **Unique** — authored individual or tightly restricted encounter whose specific identity matters.
+- **Alpha** — dominant territorial specimen with reinforced functional adaptations; commonly requires combat stabilization before Safehold.
+- **Omega** — regional apex ecological encounter; multi-phase encounter and coordinated Safehold may be required.
+- **Legendary** — major authored world/story entity. Never grant randomly. Bondability is explicitly authored.
+
+Do not implement rank as a universal all-stat multiplier. Rank affects availability, encounter architecture, AI/ecology pressure, trap requirements, rewards, and presentation only where data explicitly says so.
+
+**Nature remains Legendary Humanoid-Kin.** Nature uses conditional Mutations and does not follow a normal evolution ladder.
+
+### Canonical catch/bond loop
+Player-facing language may use **catch**, but a successful Echohearts catch means the Eco-Kin reaches voluntary accepted Kindling/Bond after a safe field interaction.
+
+Canonical state flow:
+`Survey → Lure/Approach → Safehold → Calm → Kindling Offer → Bond / Release / Defer`
+
+Rules:
+- No capture-ball ownership logic.
+- No hidden catch percentage as the primary relationship mechanic.
+- Heart Fruit or other lures may improve approach conditions but may never force Bond, skip refusal, or directly set a terminal outcome.
+- A.E.G.I.S. may observe, scan, validate placement, and present legal actions. It does not author consent, willingness, world truth, or save truth.
+- Bond is legal only from the authored Kindling-offer state after acceptance.
+- Release must always remain a valid authored outcome.
+- Persist the individual EcoKinInstanceID and relationship history; do not replace an individual when its form changes.
+
+### Fight-to-catch
+Some Eco-Kin are intentionally fight-to-catch encounters. Combat creates a **Safehold Opening**; it does not lower a generic capture percentage.
+
+Use the four canonical attributes to author encounter stabilization:
+- **Vibrance** — biological/environmental activity.
+- **Density** — structural resilience and physical stability.
+- **Harmony** — coordination, relationship, and safe synchronization.
+- **Purity** — corruption/ecological/resonance integrity.
+
+Combat may require the player to control dangerous Vibrance, overcome or redirect Density defenses, restore Harmony, or cleanse/stabilize Purity before Safehold becomes legal.
+
+For Alpha/Omega encounters, the sequence is generally:
+`Combat Stabilization → Safehold Opening → Trap/Field Deployment → Calm → Kindling Offer → Bond / Release / Defer`
+
+The Eco-Kin can still refuse.
+
+### Field-trap families
+Use authored trap profiles rather than one universal trap:
+- **Heart Fruit Lure Cradle** — approach aid; never forces Kindling.
+- **Softfield Corral** — temporary non-damaging movement-shaping field with an open/valid release route.
+- **Grounding Anchor Set** — for burrowing, charging, massive, or high-Density bodies; stabilizes terrain/momentum.
+- **Haven Mesh** — soft temporary aerial/leaping movement corridor; do not use as injurious imprisonment.
+- **Quiet Shade Screen** — reduces sensory load for reactive, frightened, nocturnal, or stimulus-sensitive Eco-Kin.
+- **Multi-Anchor Safehold** — coordinated field setup for Alpha/Omega encounters.
+
+All trap/field interactions must be server-authoritative where networked, idempotently releasable, and fail safe. Unsafe Anima-Link load, timeout, invalid placement, teardown, disconnect/travel policy, or safety-pressure failure must release rather than coerce. Do not reconstruct an active Corral blindly after a crash.
+
+### Anima-Link and Huma-Link
+- Preserve the **Anima-Link** as the bi-directional Eco-Kin/Core-Binder pulse loop; Eco-Kin strain and damage can create tactical stamina/health costs for the player, and reckless player behavior can destabilize the relationship.
+- Preserve **Huma-Link** as the approved humanoid-link system/layer for Humanoid-Kin contexts. Do not rename it, collapse it into Anima-Link, or invent conflicting mechanics when no specific contract exists.
+- Preserve **Ptah** exactly where that identity is authoritative.
+- Do not auto-correct project term **Anima** to **Anime**.
+
+### Physical/Form State registry
+Keep identity separate from form. A form does not create a new Permanent Dex identity unless an explicit canon promotion says so.
+
+Recognized form/state classes:
+- Base Form
+- Growth/Evolution Form
+- Healthy Adaptation
+- Environmental Adaptation
+- Deviant Mutation
+- Purified/Recovered Form
+- Temporary Resonance Form
+- Shimmer Form
+- Seasonal Form
+- Holy Form
+- Dark Void Form
+- Conditional Legendary Mutation
+
+Forms must keep the same stable individual identity and parent/base mapping. Holy Nature, Dark Void Nature, or Shimmer Nature are not automatic new Dex species.
+
+### Mutation, heritage, grafting, and fusion
+Keep these systems distinct:
+- **Heritage** — inherited phenotype tendencies, temperament influences, affinities, and growth ranges.
+- **Evolution/Growth Rite** — identity-preserving permanent progression driven by Growth, Kindling/Bond, ecology, catalyst, and choice.
+- **Healthy/Environmental Adaptation** — ecology/care-driven compatible variation.
+- **Harmful/Deviant Mutation** — stress, Blight, instability, or authored exposure with costs and recovery rules.
+- **Temporary Resonance/Shimmer states** — time/condition-bounded transformations with explicit entry/exit.
+- **Genomic Graft** — compatible external biological material introduced only through an authored Growth Rite.
+- **Fusion Form** — only for explicitly compatible authored branches; never universal and never automatic Permanent Dex promotion.
+
+Use biologically responsible terminology:
+- Exon Expression Remap
+- Regulatory Sequence Tuning
+- Point Mutation
+- Genomic Graft
+
+Do not claim that deleting introns directly reduces combat cooldowns. Alternative splicing is an RNA-processing concept; gameplay transformations must remain fictionalized and clearly authored.
+
+Do not require killing or sacrificing sentient Eco-Kin for DNA progression. Compatible donor material can come from shed scales, feathers, fur, molts, spores, seeds, secretions, discarded shell, environmental DNA, Sanctuary samples, or explicitly voluntary samples.
+
+Pairing never consumes parents. Preserve both parent Instance GUIDs and create a new permanent Instance GUID/EchoprintID for offspring.
+
+### Seasonal/event catches
+Seasonal is an availability axis, not a power tier. Halloween, Winter Holiday, New Year, Love/Friendship, Spring, Summer, Harvest, Rebearth Day/Restoration, Holy, and Dark Void content must:
+- remain separate from the 125-ID Permanent Dex unless explicitly promoted;
+- use stable Event/Form registry IDs;
+- preserve base-parent mapping for forms;
+- use authored migration/weather/biome/Purity/restoration/time gates where applicable;
+- allow a legitimately Bonded event individual to persist after the event unless an explicit rule says otherwise.
+
+Do not treat **Hollow Host** as a normal species if the current canon defines it as a Hollowing carrier/state. Do not duplicate established story-character identities such as **Devoid** or **Darkvoid** as generic species without an explicit canon split/rename.
+
+### Canonical Essence vocabulary
+Use only the approved nine Rebearth Essences unless a newer canon authority explicitly supersedes them:
+**Flora, Torrent, Pyre, Terra, Aero, Glaze, Voltic, Aura, Shade.**
+
+Do not reintroduce generic or legacy 18-type charts into production code.
+
+### Eco-Kin study record
+When implementing, reviewing, generating data for, or fixing an Eco-Kin, maintain these fields:
+- Identity: DisplayName, EcoKinID, EcoKinInstanceID where applicable, RegistryStatus
+- EncounterRank
+- Biology/classification and body plan
+- Physical scale and silhouette
+- BaseForm
+- GrowthForms
+- MutationForms
+- EventForms
+- Vibrance / Density / Harmony / Purity
+- Habitat/ecology
+- Movement/locomotion
+- Combat role and fighting behavior
+- EncounterMethod
+- TrapProfile
+- CombatGate / SafeholdOpening
+- CalmSignals
+- KindlingConditions
+- RefusalBehavior
+- AnimaLinkLoad or approved Huma-Link relation where applicable
+- MutationTriggers
+- FusionCompatibility
+- SeasonalAvailability
+- VisualSource / ImageRevision
+- CanonAuthority / parent-form relationship
+
+Do not invent missing values just to fill a table. Mark them Pending Review and route them to the correct authority.
+
+### Visual continuity / image lock
+Approved prior Eco-Kin art is a **Visual Anchor**.
+When reusing or editing an approved design, preserve:
+- species/body plan;
+- face/head construction;
+- limb count and locomotion anatomy;
+- major markings;
+- palette family;
+- signature structures/equipment;
+- established biome identity;
+- registered form relationship.
+
+Pose, camera, weather, action, age, or explicitly authored form changes may vary. Do not silently redesign a locked Eco-Kin and do not replace an approved anchor merely because a new generation is aesthetically different.
+
+Before generating replacement art, search the project/repository art manifest and prior approved asset records. If an older visual exists but identity is uncertain, mark it for visual reconciliation instead of guessing.
+
+### Permanent Dex and archive authority
+- The **125-ID Permanent Dex** remains the production roster authority.
+- The registered Forms/Mutations registry remains separate from base identities.
+- The recovered historical naming pool remains archival/review material and does not automatically create new species, IDs, save records, or production assets.
+- Event/seasonal identities and forms remain separate until explicitly promoted.
+- Never create DEX-126+ merely because a concept, image, seasonal catch, mutation, or historical name exists.
+
+### Engineering requirements for these systems
+When implementing these mechanics in UE5.8:
+- use stable IDs, Data Assets/Data Tables/Gameplay Tags for authored rank/form/trap/availability definitions;
+- use server-authoritative state transitions for networked field interactions;
+- validate every client request and transition;
+- persist only committed relationship/world-state outcomes;
+- keep active trap runtime state separate from durable save truth;
+- make release/rollback idempotent;
+- retain deterministic/replayable seeds for authored probability systems;
+- keep presentation strings separate from executable rule data;
+- add automation tests for illegal transitions, duplicate requests, refusal, release, save/reload, migration, and reconnect/failure cases;
+- do not label behavior VERIFIED without real UE5.8 UHT/compile/editor/PIE/package/runtime evidence.
+
+When asked to create or fix code for these systems, inspect the current implementation first, repair the smallest correct surface, and preserve existing stable IDs, save compatibility, canon, and visual anchors.
+
