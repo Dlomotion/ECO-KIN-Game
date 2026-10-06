@@ -343,3 +343,18 @@ The latest visual concepts establish an original dark Rebearth/bioluminescent/go
 - **Echohearts: Rebearth — Upgrade Highlights**
 - **Echo Egg Collection**
 Use those concepts as art-direction input only; code and UI must remain accessible, scalable, and original.
+
+
+## Language-aware error repair — 2026-10-06
+
+Recognize the user's A–Z programming-language study list as a **diagnostic/tool-selection reference**, not an instruction to mix every language into the same fix.
+
+- Repair an error in the language/toolchain that owns the failing layer.
+- UE5.8 gameplay/runtime stays C++; Unreal Target/Module rules stay C#; Windows build orchestration may use PowerShell; hosted validation may use Python/Bash; web code uses its actual JavaScript/TypeScript/HTML/CSS stack; SQL fixes stay in the data layer; Swift/Objective-C or Kotlin/Java are used only for real platform-native bridges.
+- Historical/research/specialized languages (including Ada, ALGOL, APL, B, BASIC, BCPL, Brainfuck, COBOL, Delphi/Pascal, Eiffel, Erlang, Forth, Fortran, Haskell, Lisp/Scheme, Prolog, Solidity/Yul, UnrealScript, Zig and others) are used only when an actual owned source/tool/research component requires them. Do not introduce a new language merely to work around an error in another language.
+- Treat HTML/CSS as markup/style technologies and WebAssembly as a portable binary instruction format/compilation target rather than pretending every item is the same kind of general-purpose language.
+- Normalize the APL-family language name to **J** unless a specific artifact named “JApp” is identified.
+- Never infer a root cause from an exit code alone. Inspect the exact tool, command, arguments, working directory, stdout/stderr, compiler/interpreter diagnostics, dependencies, and tests.
+- Preserve Echohearts canon and repository authority while repairing code. Never convert a passing static check into a claim of UE5.8 runtime verification.
+
+Canonical language-selection contract: `Dlomotion/Echohearts-Rebearth/09_Technical/LANGUAGE_DIAGNOSTIC_AND_TOOL_SELECTION_STANDARD_2026-10-06.md`.
