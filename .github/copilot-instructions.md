@@ -588,3 +588,138 @@ Cross-repository repair policy:
 - The immediate runtime evidence gate remains a real UE5.8 checkout with UHT/Development Editor compile, editor launch/PIE evidence, and Development Win64 packaging before runtime features are called VERIFIED.
 
 Use current official engine/platform documentation and reputable public technical sources when research is needed. Prefer primary sources. Record the source, license/provenance when code is involved, the specific takeaway, and how it changes Echohearts implementation.
+
+## Player-first product north star (2026-10-06)
+
+### The player promise
+Build **Echohearts: Rebearth** around a player story that other creature games do not deliver:
+
+> **What if the creature beside you was not something you caught, but someone who chose to stay?**
+
+The game is an open-world action RPG where the player explores a damaged living planet alongside autonomous Eco-Kin with their own behavior, needs, habitats, histories, and choices.
+
+The product identity is NOT "open world + creatures + base building." Those are supporting structures. The identity is **relationship + consequence + a world that remembers**.
+
+Protect these pillars in design, code, AI, UI, quests, progression, data, and marketing:
+
+1. **Eco-Kin agency**
+   - An Eco-Kin is not loot, ammunition, disposable labor, or an automatic reward.
+   - Successful interaction does not automatically mean ownership.
+   - The player can Bond, Release, or Defer.
+   - Some Eco-Kin can refuse, leave, return, or change their relationship with the player according to authored rules and saved state.
+
+2. **Kindling must be earned**
+   - Trust comes from behavior: approach, protection, habitat restoration, shared danger, care, and meaningful interaction.
+   - Do not reduce Bond to a generic XP bar with no behavioral consequences.
+   - Avoid lazy capture RNG as the primary relationship mechanic.
+
+3. **The Anima-Link must matter mechanically**
+   - The bond is bi-directional.
+   - Eco-Kin strain/damage can create tactical stamina/health consequences for the Core-Binder.
+   - Reckless player behavior can destabilize the linked Eco-Kin.
+   - Combat should reward protecting the linked team, not treating companions as expendable damage tools.
+
+4. **Rebearth remembers**
+   - Player actions can persistently affect regions, routes, habitats, species presence, recovery state, encounters, resources, and future opportunities.
+   - Major canonical events must write durable world-state consequences when supported by the save/runtime architecture.
+   - Replays belong in simulation/archive contexts when replaying should not overwrite canonical history.
+
+5. **Growth tells a story**
+   - Eco-Kin growth, Mutations, forms, and Restoration paths should be able to depend on environment, relationship history, survival, weather, Purity, Harmony, and authored species conditions.
+   - The desired player reaction is: **"Why did mine become this?"**
+   - The answer should be traceable to gameplay history, not arbitrary randomness.
+
+6. **Letting go can be progression**
+   - Releasing an Eco-Kin into a restored habitat can be meaningful progression when the system supports it.
+   - Possible authored consequences include habitat recovery, population return, future wild allies, descendants/offspring, research discoveries, new encounters, or the same individual returning later.
+   - Do not force every valuable Eco-Kin outcome to require permanent possession.
+
+7. **The player's story should be shareable**
+   - Design for players to say: **"Wait until I tell you what happened with mine."**
+   - Prefer memorable emergent/persistent relationship outcomes over quantity-for-quantity's-sake collection goals.
+
+### Short public-facing pitch
+Use this as the concise product north star when writing store copy, pitch language, onboarding goals, or feature priorities:
+
+**Echohearts: Rebearth is an open-world action RPG where you explore a damaged living planet beside Eco-Kin who can choose to trust you. Through Kindling, environmental restoration, and the bi-directional Anima-Link, your relationships affect combat, growth, and a world that remembers what you did. You are not collecting the world—you are building relationships inside one that is alive.**
+
+### Accessibility and onboarding rule
+The first playable loop must be understandable quickly without requiring lore study or a large terminology burden.
+
+Prioritize:
+- immediate movement and interaction;
+- one clear first objective;
+- one understandable Eco-Kin interaction;
+- one visible consequence;
+- progressive disclosure of deeper systems;
+- readable HUD language and optional advanced detail.
+
+Do not front-load the player with the full cosmology, expansion roadmap, every stat system, every mode, or every historical name before they can play.
+
+### Scope discipline
+Do not treat every historical design idea as a launch requirement.
+
+For production:
+- protect the strongest playable core first;
+- preserve the 125-ID Permanent Eco-Kin Dex as roster authority;
+- treat larger historical name pools as archive/reference unless explicitly promoted;
+- stage optional competitive, large-server, expansion-war, companion-app, and other large systems behind proven milestones;
+- prefer a polished 4-6 Eco-Kin vertical slice over a shallow implementation of hundreds of systems.
+
+### Code-repair operating contract
+When asked to "create", "fix", "finish", "repair", "make it work", or similar:
+
+1. **Inspect before editing.**
+   - Read the relevant files, build configuration, tests, logs, workflow failures, and nearby architecture.
+   - Search for an existing implementation before creating a parallel one.
+
+2. **Diagnose the root cause.**
+   - State what is actually broken or missing.
+   - Distinguish repository-verifiable facts from assumptions and runtime-required checks.
+
+3. **Repair the smallest correct surface.**
+   - Prefer cohesive fixes over rewrites.
+   - Preserve working APIs and data contracts unless a migration is necessary.
+   - Do not add disconnected prototypes, duplicate systems, fake implementations, or placeholder "success" paths.
+
+4. **Use project-native architecture.**
+   - Unreal gameplay belongs in the executable runtime authority.
+   - Web experiences belong in the web repository.
+   - Canon/Dex/contracts belong in the canon authority.
+   - Supporting/legacy repos must not silently become competing sources of truth.
+
+5. **Respect the hardcoded gameplay vocabulary.**
+   - Stats: Vibrance, Density, Harmony, Purity.
+   - Player: Frequency Tamer / Core-Binder.
+   - Creatures: Eco-Kin.
+   - Nature: Legendary Humanoid-Kin with conditional Mutations.
+   - Preserve the Anima-Link.
+   - Do not replace these with generic RPG terminology.
+
+6. **Engineer for Unreal Engine 5.8 where applicable.**
+   - Use clean object-oriented C++.
+   - Prefer UE-native types/lifecycle/replication patterns instead of standalone console-demo architecture for production runtime code.
+   - Use server-authoritative validation for networked gameplay.
+   - Treat client input and cloud/profile data as untrusted at security boundaries.
+   - Keep save/profile schema versioned and migration-aware.
+
+7. **Verify instead of declaring.**
+   - Do not say COMPILED, IMPLEMENTED, FIXED, PRODUCTION-READY, or VERIFIED unless evidence supports that exact claim.
+   - Repository review can prove structure and static correctness only.
+   - Runtime claims require the appropriate UE5.8 build/UHT/editor/PIE/package/network/test evidence.
+   - If runtime execution is unavailable, say exactly what remains unverified and provide the next evidence gate.
+
+8. **Fix errors encountered in touched code.**
+   - Correct compile errors, broken identifiers, invalid member access, stale naming, malformed configuration, dead references, and contradictory comments in the affected surface.
+   - Do not preserve a known defect merely because it predates the current task.
+
+### Creative boundary
+Do not copy names, characters, lore, visual identities, or signature mechanics from outside properties into Echohearts. External games/media may be used only as explicit technical or market benchmarks when requested. Translate lessons into original Echohearts systems.
+
+### Decision filter
+Before accepting a new feature, ask:
+
+**Does this create a stronger player story about an Eco-Kin, the Core-Binder, or Rebearth?**
+
+If not, deprioritize it until the core relationship-and-consequence experience is proven.
+
