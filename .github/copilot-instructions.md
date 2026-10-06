@@ -207,3 +207,123 @@ Trace gameplay changes end-to-end:
 
 Use `STATIC CHECK PASSED`, `REPOSITORY CONTRACT PASSED`, `CI PREFLIGHT PASSED`, and `NOT VERIFIED — UE BUILD/RUNTIME EVIDENCE REQUIRED`. Use `VERIFIED` only with matching evidence.
 
+
+## Historical Eco-Kin naming pool + COBOL/BASIC directive — 2026-10-06
+
+### Authority and archive rules
+- The **125-ID Permanent Eco-Kin Dex** remains the production roster authority.
+- Preserve the **1,120-name Master Historical Naming Pool** as an archive of created names, prototypes, forms, evolutions, mutations, regional variants, rename candidates, cosmetics, bosses/entities, legacy labels, and retired references.
+- Never auto-promote a historical name into the Permanent Dex. Promotion requires explicit canon review, a valid stable EcoKinID or approved Forms Registry relationship, anatomy/identity review, originality/IP review, data validation, and production evidence.
+- Historical names that collide with outside franchises, protected characters, direct mythology imports, or other zero-derivative restrictions must remain quarantined under 99_Reference_Retired_Needs_Redesign until replaced with original Echohearts nomenclature.
+- Do not delete, silently rename, or overwrite historical names merely because they are not current canon. Preserve provenance and redirects.
+- Before creating a new Eco-Kin name, search the Permanent Dex, Forms Registry, and this historical pool to avoid duplicates and accidental identity replacement.
+
+### Master historical alphabetical naming pool
+**#**  
+15 Karat
+
+**A**  
+Aardhymn, Abysslurk, Abyssola, Abyssquill, Aeralune, Aerobloom, Aerobull, Aerocrest, Aerodart, Aerogale, Aerokite, Aerolynx, Aeropierce, Aeropteryx, Aeropuff, Aeroraptor, Aeroray, Aeroscale, Aerospike, Aerospine, Aerostrike, Aeroterra, Aerotusk, Aerovelon, Aerovine, Aerovore, Aerovortex, Aerowasp, Aerowisp, Aerowyrm, Aeruin, Aether-Valkyrie, Aether-Wisp, Aetherwing Seraphin, Aevaswift, Africanized Queen, Anstronaut, Ant, Anteater, Antelope, Antler, Aqua-Drift, Aquaceros, Aquafinn, Aqualin, Aqualume, Aqualynx, Aquanith, Aquatyr, Aquoray, Aquorgnash, Arborveil, Armadillian, Ash-Brawler, Astraea Lumicore, Astraelune, Astravault, Astryx, Atomic Horror, Auraglider, Aural, Auralyss, Aurelior Prime, Aurelius-Prime, Aureon, Aurora Basin, Aurorabloom, Auroraeel, Aurorafin, Auroraguard, Aurorale, Auroralis, Aurorarch, Aurorash, Aurorisk, Aurunefer, Axoloti, Azura Turtle, Azurane, Azurbuzz, Azure Soul, Azureon Shell, Azurtle Crest.
+
+**B**  
+Bananaza, Barkguard Accent, Basalt-Crusher, Basin Sentinel, BeAts, Bees Gees, Beetle, Billstalk, Black Swan, Blackflash Thylundra, Blightfang Vezreth, Blightide, Blighttad, Blizzara, Bloomantis, Bloombud, Bloomplate Nurture, Bogbloom, Bogtank, Boogie Woogie, Boomturt, Bot, Bot Core, Botan-Bug, Breezephyr, Breezette, Briarshade, Brimclaw, Bromebruin, Bubba, Bubbleep, Bugsaboom, Buttafly.
+
+**C**  
+Cadensora, Calla Lilly, Calycko, Candelbra, Canopulse, Canopyrex, Canopyrus, Canopyvault, Capyflow, Cattapilla, Cattery, Causticpulse Olmnisense, Celestefish, Celestidrift, Celestrake, Celestrider, Chacron, Chaos Howler, Chaos Woof, Cherry Blossom, Chesster, Chimpanzion, Chip Ship, Chorusvine Accent, Chronos-Kyros, Chronydon, Cinderclaw, Cindermaw, Cinderplate Defender, Cinderpup, Cindersnout, Cindervault, Citrakhan, Clearcycle Eonotara, Clearsap Accent, Clearstorm Thylundra, Clockedit, Cloudpip, Coluglyph, Coluglyph Skyweaver, Continental Wake, Coral Owl, Coralguard, Coralith, Corallith, Coralomni, Coralshell, Coralsinge, Coraltide, Coralug, Coralvine, Coralynx, Corrupelle, Corrupted Ferronix, Corvexis, Cosmo-Seraph, Cragbeetle, Craghide, Cragleon, Cragmunch, Cragquill, Cragrhino, Cragtusk, Crane, Crowncurrent, Crownsting Matriarch, Cryopuff, Cryovulp, Crystalaxe, Crystalbite, Crystalisk, Crystallurk, Crystallux, Crystalsikr, Crystaltimber, Crystalux, Crystalynx, Crystephin, Crystikoi, Crystogon, Cyclops.
+
+**D**  
+D. Frog, Dalmatian, Dammaker, Dandecrown, Dandelift, Dandelion, Dante Inferno, Dappletide, Deadwave Kakaphonic, Deep Chorus, Deepclaw, Deer Don, Demon, Dewfawn, Doctorpua, Doll Scorched, Dr. Evil Sylar, Draggong, Dreadroot, Dryad, Dryara, Duke Drake, Dullahan, Duneskitter, Duneslash, Dunespike, Dunesprig, Dunetrunk, Dunewraith, Duskfin, Dust Bunny, Dusthollow.
+
+**E**  
+Ebonmaw, Eerie, Eerivex, Eerloom, Electroid, Elephiant, Ember, Ember Heart, Ember Moth, Emberback, Embercrab, Embergaunt, Emberhare, Emberpup, Embertail, Emberwing, Eonotara.
+
+**F**  
+Fairytail, Fairytell, Falcon, Falcon Orange, Falcone, Fawn Don, Fawnelle, Featherfright, Fernbeetle, Fernglider, Ferronix, Ferrumwarden, Finalize, Firefly, Flaminingo, Flare-Vulpix, Flarevane, Flashhorn, Floaureign, Floauwer, Florafinity, Florisprig, Floroyal, Fourfold Year, Fox Fur, Frostbite, Frostclaw, Frosthale, Frosthide, Frosthorn, Frostquill, Frostroot, Frostseal, Frostshard, Frosttusk, Frostveil, Frostwalrus, Frostwraith.
+
+**G**  
+Galactorra, Galegriff, Galestorm, Gargantuan, Gazillion, Geckalord, Geckalyx, Gecklorix, Geoloom, Geomunch, Geotank, Geowurm, Gerenreach, Gerenreach Crownforager, Ghost, Ghoul, Glacialugg, Glacibear, Glacibot, Glacidon, Glacidrill, Glacierkin, Glacieroo, Glacierune, Glacifang, Glacifer, Glacifin, Glacifort, Glacifur, Glacipack, Glaciram, Glaciroam, Glacirock, Glacitank, Glaciwal, Glassbill Shoebastion, Glasshorn Gerenreach, Glassmantle Korravault, Glassplate Limulock, Glassskin Siltamender, Glassveil Coluglyph, Glassvoice Kakaphonic, Glidefin, Glimbit, Glimmerbill, Glimmerpup, Glimmider, Glitchfrost, Gloomfin, Gloomstalk, Glow Worm, Glowyrm, Gnome Gazette, Gnome Rock, Goldband Termitune, Golden Fish, Goo Goo, Googley Eyes, Gopher Goshen, Granclad, Granitank, Granvore, Graveglow, Gravemaw, Graviklaw, Gravipaw, Gravipod, Gravistrider, Gravitide, Gravitonk, Gravityx, Gravlith, Gravypod, Greedyig, Griffin, Grim Stone, Grimbloom, Grimburrow, Grinmlin, Grove-Beetle.
+
+**H**  
+Hammerwake, Hamstring, Handimon, Hands Shake, Harp Harmonies, Hawke, Headwater Bulwark, Hedgeshog, High Voltage, Hippo, Hisbiscuits, Hive Spark, Hollowhunger Termitune, Horizon Crown, Horizon Veil, Hounding, Huntresson, Hushrot Aardhymn, Husky, Hydra, Hydrashell, Hydrothorn.
+
+**I**  
+I Scream, Icesentinel, Igneelisk, Igniclaw, Ignifin, Ignirock, Igniserpent, Ignishell, Ignisoul, Ignispike, Inkmire Vitrivane, Iron-Paladin, Iron-Spark, Ironbeak, Irondeer, Ironhide.
+
+**J**  
+Jackalope, Jelly Jellyfish, Jen, Jester in the Box, Jesteroy, Jewel.
+
+**K**  
+Kakaphonic, Kakaphonic Nightchorus, Kangzaroos, Kelpteris, Ken, Kendo, Kharuvane, King Corso, King Luthar, King Luther, Kitty, Knight, Korravault, Krabs.
+
+**L**  
+Lady Whispers, Lamp, Lanternworm, Lavabat, Lavabuzz, Lavaclaw, Lavafang, Lavalynx, Lavamite, Lavasaur, Lavascamp, Lavashark, Lavaslug, Lavatyrant, Leaf Sheep, Leafguard, Lela, Lemuer, Leon, Leonclaw, Leoncub, Leonguard, Leonix, Leonix Solcrown, Leopaerd, Leviacrest, Leviakresl, Likeness, Limulock, Limulock Shorewarden, Lioness, Lioness Apex, Litty, Lobster, LolLlama, Lorium, Loyalkin, Lumbristell, Lumi, Lumibloom, Lumifae, Lumiflora, Lumifly, Lumifrog, Lumikoi, Lumina, Luminae, Luminaeel, Luminarch, Lumincrab, Luminectar, Luminel, Luminelk, Luminella, Luminelle, Lumineth, Luminflutter, Luminhare, Luminight, Luminite, Luminix, Luminomoth, Luminowl, Luminreef, Lumipint, Lumipod, Lumipollen, Lumipup, Lumiseed, Lumishroom, Lumisprite, Lumistag, Lumitail, Lumiwisp, Lumoray, Lumowisp, Luna Moth, Lunamoth, Lunar, Lunara, Lunaraith, Lunarious, Lunatik, Lunavelle, Lunawisp, Lunaz, Luphantom.
+
+**M**  
+Maat, Macaw, Mad Scientist, Magma-Golemx, Magmamite, Magmancer, Magmaroach, Magmaroar, Magmaweld Golem, Magmaworm, Magmorph, Magmorray, Magmusk, Magnapod, Magnash, Magnetar-Titan, Magnetarion Ward, Maize Fortune, Majestik, Mallard, Malon-X, Malon-X the Ink-Ghost, Mamba Kobe, Mamba Kobra, Mandarinis, Mandarion, Mangolden, Mantiz, Marispaw, Marisprit, Marmara, Marrowl, Maxwells, Mcterritorial, Medusa, Membrakit, Mermaid, Mermain, Minnie Ripton, Mireblob, Mirebloom, Mirecoil, Mirefrog, Miregator, Miregill Pelaglyph, Miregorge, Miregorger, Miregulp, Mirehiss, Mirejaw, Mirestomp, Mirevell, Mirewisp, Mistbuck, Misteon, MoeJoe, Moltide, Moon-Walker, Moondrake Umbrelune, Moongoss, Moonpuff, MoonWalker, Morg-An, Morg-An the Thorned Rebel, Morrowind, Mossbeast, Mosschick, Mossmask, Mossmunch, Mossprout, Mottlit, Moundseer, Mousier, Mt. Rush, Mummie, Murmlet, Mustang, Mycelith, Mycodrip, Mycoshade.
+
+**N**  
+Nature, Nature Prime, Nature Prime Guardian, Nature Seedling, Nature Verdant, Nature’s Guardian Titan, Nebula, Nebulark, Nebulark Voidwing, Nebulord, Nerekth, Nexaris, Night Angel, Night Owl, Nightgnaw, Nightlurk, Nightpetal, Nightsprout, Nightstalk, Nightveil, Nimbloom, Ninabite, Nivrak, Normandy, Nova, Nullwake, Nulvora, Nurture.
+
+**O**  
+Oceanus, Octorpus, Olmnisense, Olmnisense Deepwarden, Omni-Bot Frame, Opal, Oracle, Oral, Orcanize, Origon-Null, Orokharn, Osiris.
+
+**P**  
+Palmatyr, Panda Panda, Pangobunker, Pangolance, Pangolin, Panther, Parish, Paw, Peacockochu, Peariguard, Pearl, Pebblegill, Peepfloe, Pelaglyph, Pelaglyph Tidevault, Peppa, Perchara, Perronix, Phoenix, PI-RAT, Pickled Wasp, Pigcasso, Piglot, Pin Stripe, Pinguin, Pinky Bear, Piplin, Plainsman, Poison Ivy, Pola Bear, Polarised, Pondhalk, Poodle D., Poodle Moth, Poyzin Ivvee, Primordash, Prince, Princeton, Prismcurrent Pelaglyph, Prismcurrent Vitrivane, Prismgill Olmnisense, Prismhorn, Prismveil Veylugo, Puddlepeep, Pupular, Pyraboar, PyraLeaf, Pyraphant, Pyratyrant, Pyravore, Pyrewolf, Pyrixis, Pyroduck, Pyrofawn, Pyrogator, Pyromane, Pyroquill, Pyroterra.
+
+**Q**  
+Quakecrab, Quakehog, Quakelurk, Quaketail, Quaketurt, Quaketusk, Quarrant, Queen Cobra, Queen Corgi, Quickleaf Accent.
+
+**R**  
+Rabbit, Rainhart, Ramos, Ranger Bat, Raven, Reaper-Skull, Red Panda, Reednote, Reeflantis, Reeflorp, Reeflume, Refined Golem, Resonance Kit, Rhizoquill, Rift-Kin, Riftfray Veylugo, Riftplume Aurorarch, Rimefin, Ringmaster, Rino Rhino, Riptide, Robcoon, Robin, Robo Girl, Robopintic, Rockhide, Rockmunch, Rocktide, Rocktusk, Rookurrent, Rootank, Rootcrawler, Rootglass Aardhymn, Rootstalker, Royal Knight, Rubblewick Joss, Rustbeak Shoebastion.
+
+**S**  
+Saigale, Sandsprint, Sandstrider, Scarab, Scarecrow, Scorcherix, Sea King, Sea Queen, Sea Turtle, Sealed, Seaplume, Searhound, SeaShield, SeaShock, Sekhmet, Serpentide, Serpentine, Shadefang, Shadepaw, Shadestrike, Shadolynx, Shadotide, Shadowbeak, Shadowbite, Shadowburr, Shadowburrow, Shadowburst, Shadowdart, Shadowdive, Shadowdrake, Shadowfang, Shadowfern, Shadowfin, Shadowgnaw, Shadowgulp, Shadowisp, Shadowlance, Shadowlurk, Shadowmantis, Shadowmoth, Shadownyx, Shadoworb, Shadowpang, Shadowreef, Shadowrift, Shadowroach, Shadowvore, Shadowwisp, Shadrow, Shardwing, Shellkorp, Sherlock Hound, Shoebastion, Shoebastion Marshwarden, Shredwind Coluglyph, Shroom Seahorse, Siltamender, Siltamender Riverelder, Siltback, Skeleton, Skullkin, Skybellow, Skydart, Skydrifter, Skyjelly, Skyloper, Skyquill, Skyraxis, Skyrhapsody, Skytalon, Skyterrix, Skytortoise, Skyvein Crown, Slagheart Korravault, Slagshield Limulock, Sludgemaw Siltamender, Slym Thicke, Snailer, Snoutap, Snoutzip, Snow Bird, Snow Cone, Snow Owl, Snowlet, Snowstrom, Snuffawn, Soaraptus, Solara, Solarail, Solaraven, Solaraxe, Solarcalf, Solareon, Solarflare, Solarian, Solarion, Solaris, Solariser, Solarisq, Solarix, Solarphant, Solarphere, Solarphoenix, Solbeast, Solbeetle, Solcrab, Soldragon, Soldrifter, Solglide, Solguardian, Solkeeper, Sollumen, Solmane, Solmarrow, Solmite, Solorion, Solray, Solrider, Solserpent, Solstalis, Solsylph, Soltalon, Soltortus, Solvore, Solvyrion, Solwisp, Solwraith, Space Bunny, Spacialis-Zea, Sparkyle, Spectra Aurora Emperor, Spectra Chick, Spectra Chicks, Spectra Glidefin, Spectra Glitchfrost, Sporeling, Sporuling, Sprigbeat, Spritz, Sproutkin, Sproutling, Sproutlume, Sproutneck, Squiggly, Squirrel, Stag Don, Starfin, Starflit, Starhaven Perch, Starvault Spires, Stillseason Eonotara, Sting Wreck, Stone-Treader, Stoneback, Stoneburrow, Stoneguard, Stonegulk, Stonehide, Stonejug, Stonelug, Stonemaw, Stonemite, Stonequill, Stonetail, Stonetusk, Stormember, Stormhare, Stormjelly, Stormling, Stormpup, Stormwyrm, Stud Muffin, Sunbride, Sunhoof, Sunseta, Sunspire, Swamps, Swan, Swarm Guard, Sylva-Lynx, Sylvanheart, Sylvornith, Synchronus, Synchronus Omega.
+
+**T**  
+T-Rex, Tangeroar, Taquo, Taz, Teddy Reddy, Tempestiga, Tempus-Rex, Termitune, Terra Tusk, Terrabolt, Terralume, Terrawyrm, Terrhino, Tex Rex, Thalassyr, Thermogale, Thermopyre, Thingamabob, Thingamajig, Thornback, Thornmask, Thornquill, Thornshell, Thornveil, THOTH, Thrilla Zombie, Thundaroar, Thundrak, Thylundra, Tidal Bastion, Tidalash, Tidalcrab, Tidalgaurd, Tidalion, Tidalorca, Tidalorp, Tidalspine, Tidaltank, Tidalusk, Tidalux, Tidalwyrml, Tideblot, Tidebutton, Tideclaw Myrmander, Tidefin, Tidelet, Tidelup, Tidequill, Tidewhisk, Tidewisp, Tigrelion, Tigress, Tigrisoul, Tiki, Tortopedo, Torturecannon, Toxibloom, Toxiclaw, Toxifang, Toxifern, Toxiflora, Toxiflow, Toxigator, Toxigulp, Toxileech, Toximander, Toxiraptor, Toxitank, Toxitusk, Toxiviper, Treezing, Tundrahide, Tundraleo, Turntle Turtle, Twilight-Tricker.
+
+**U**  
+Ultra Nature Spark, Umbraeel, Umbraleap, Umbralynx, Umbrapaw, Unbound, Uniquecorn.
+
+**V**  
+Vaelthundra, Venobloom, Venofang, Venoflow, Venolord, Venomander, Venomite, Venomyss, Venoroach, Venoshroud, Venoslug, Venus Fly Trappin, Verdanok, Verdant, Verdant Nature, Verdant Sage, Verdantapir, Verdanthem, Verdantis, Verdantune, Verdeloth, Verdleaf, Veribark, Veribelle, Veriboar, Veribud, Vericlaw, Vericub, Veridan, Veridash, Veridasher, Veridotter, Veridragon, Veridrake, Veridrench, Veridrift, Veridrill, Veridust, Verifawn, Verifrog, Verigale, Verigaleon, Veriguard, Verihare, Verileap, Verilop, Verilurk, Verilynx, Verimite, Veripad, Veripaw, Veripouncer, Veriraptor, Verirun, Verishell, Verishroom, Verishroud, Verisilex, Verispine, Verisprout, Verithorn, Verithread, Verivine, Veylugo, Vharomaw, Vilecroc, Vilemole, Vilemorph, Vilemoss, Vineclaw, Vinesaur-Rex, Vitrivane, Voidbloom, Voidcrusher, Voidjelly, Voidmanta, Voidmorph, Volcanik, Volcrab, Volcraw, Volquoil, Voltage, Volthor, Voltiki, Vulcan.
+
+**W**  
+Walorus, Waste-Kin, Wavehorn, Waveplume, Whaling, Whatchamcallit, White Tiger, Whole-Aquifer Sense, Whole-Canopy Sail, Whole-Gallery Hearing, Wirethorn Gerenreach, Wolfie, Wood Pecks, Wooflet, Wooofy, World Kiln, Worldbloom, Worldroot Chorus, Worldroot Leviathan, Worm, Wormling, Wreckstorm.
+
+**Y**  
+Yolk.
+
+**Z**  
+Zangoro Seedling, Zebrask, ZebraskA, Zephyloon, Zephyrahn, Zephyray, Zephyrift, Zeptoray.
+
+### COBOL and BASIC engineering directive
+COBOL and BASIC are now approved **secondary engineering/tooling languages** for the Echohearts repository family. They supplement but do not silently replace the UE5.8 C++ production runtime.
+
+Use COBOL where its record-oriented strengths are useful:
+- deterministic roster/material/accounting-style batch validation;
+- fixed-width, CSV, ledger, registry, migration, reconciliation, audit, and report utilities;
+- legacy-data conversion and cross-check tools;
+- reproducible test fixtures for inventory/economy/save-data contracts;
+- CI-side data integrity checks where a COBOL compiler is actually provisioned.
+
+Use BASIC where rapid, readable tooling is useful:
+- standalone math/balance simulators;
+- migration and data-conversion utilities;
+- build/environment diagnostics;
+- small regression harnesses;
+- prototype visualizers or command-line utilities that do not become shipping gameplay authority.
+
+Language/toolchain rules:
+- Detect the actual compiler/dialect already configured in the repository before editing existing COBOL or BASIC.
+- If no COBOL dialect is established and a new standalone tool is explicitly needed, prefer portable **GnuCOBOL-compatible** source and document the compiler/version.
+- If no BASIC dialect is established and a new standalone tool is explicitly needed, prefer **FreeBASIC-compatible** source and document the compiler/version. Do not silently treat Visual Basic .NET, VBA, QBASIC/QB64, and FreeBASIC as interchangeable.
+- New COBOL/BASIC tools should live under an existing tools/validation area. If the canonical folder hierarchy exists, prefer 09_Technical/Tools/COBOL and 09_Technical/Tools/BASIC.
+- Exchange data through documented stable schemas and stable IDs; do not scrape presentation text as authority.
+- Preserve UTF-8 at boundaries where supported and define field widths/decimal behavior explicitly for fixed-record tools.
+- Return nonzero exit status on validation failure and emit machine-readable summaries where practical.
+- Add golden fixtures/regression cases for converters and ledger checks.
+- Never claim a COBOL/BASIC tool compiled or passed unless the actual compiler/interpreter and tests ran.
+- COBOL/BASIC tools must not independently redefine the Permanent Dex, Vibrance/Density/Harmony/Purity, Anima-Link, Huma-Link, save authority, network authority, economy authority, or canon.
+- Do not move server-authoritative gameplay, UE object lifecycle, replication, rendering, animation, physics, or packaging out of C++/Unreal merely to satisfy a language-use request.
+- When the user explicitly asks for a COBOL or BASIC implementation of a bounded subsystem, implement the smallest coherent utility, document the boundary, add tests/fixtures, and state what remains NOT YET VERIFIED.
