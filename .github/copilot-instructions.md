@@ -120,3 +120,27 @@ When asked to create or fix code:
 - report what passed and what remains NOT YET VERIFIED;
 - never hide a failure, suppress a required check, or fabricate runtime evidence.
 
+
+
+## Polyglot engineering and repository synchronization
+Use multiple languages deliberately; do not duplicate the same authoritative gameplay implementation across languages.
+
+- **C++ / Unreal Engine 5.8:** authoritative runtime gameplay, Eco-Kin/Humanoid-Kin actors and components, Anima-Link/Huma-Link runtime logic, replication, Enhanced Input, animation/gameplay integration, save/runtime systems, performance-sensitive code, and UE automation tests. Runtime authority belongs in the executable UE repository after canon/contracts are reconciled.
+- **Python:** repository audits, schema/Dex validation, content-pipeline tooling, build orchestration helpers, asset metadata checks, migration scripts, deterministic data generation, CI verification, and test/report tooling. Python must not become a second game runtime.
+- **C#:** bounded desktop/build/content tools, editor-adjacent utilities, backend/service prototypes, import/export utilities, and test harnesses when .NET is the justified fit. Keep contracts explicit and versioned; do not reimplement authoritative UE gameplay in C#.
+- **JavaScript/TypeScript:** Echohearts web/presentation applications, dashboards, documentation interfaces, schema viewers/editors, development portals, and secure service clients. Do not treat browser state as canon authority.
+
+### Cross-repository ownership
+- `Dlomotion/Echohearts-Rebearth`: canon, design, schemas/contracts, production index, engineering specifications.
+- `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-`: executable UE5.8 runtime/build/evidence authority; converge production C++ and verified Unreal configuration here.
+- `Dlomotion/echohearts-web`: JavaScript/TypeScript web and presentation surface.
+- `Dlomotion/Echohearts-Ecokins`: Eco-Kin asset/support archive; references the canonical 125-ID Dex rather than creating a competing Dex.
+- `Dlomotion/ECO-KIN-Game`, `Dlomotion/ECHOHEARTS-REBEARTH-`, and `Dlomotion/Echohearts`: legacy/prototype/support sources. Mine useful code with provenance, tests, and conflict review; do not silently promote them over canonical/runtime authorities.
+
+### Copilot implementation loop
+For every requested feature or fix: inspect current repository evidence -> identify canon/contracts -> search existing code before creating duplicates -> select the owning repository/language -> create a focused branch -> implement the smallest coherent change -> run available static/unit/build/runtime validation -> record exact evidence -> open a reviewable PR. Never claim VERIFIED from source inspection alone.
+
+If a feature spans repositories, define the shared schema/API contract first and make separate narrow PRs. Never solve a size/organization problem by creating a new repository automatically. Create a new repository only when there is a genuinely independent deployable/security/ownership boundary and the existing repository roles cannot contain it cleanly.
+
+### Code-fix rules
+When fixing code, trace call sites and dependencies, preserve UE reflection/UHT requirements, networking authority, save compatibility, and the four project attributes: Vibrance, Density, Harmony, Purity. Do not hide compiler/test failures, delete failing tests merely to pass CI, weaken validation without documented justification, or fabricate build/runtime evidence. Prefer official engine/vendor documentation and repository-local evidence; external code must pass license/provenance review before adaptation.
