@@ -142,3 +142,15 @@ Compiler boundary:
 Error-diagnosis rule: never infer a universal meaning from exit code 2. Read the exact failing tool, command, arguments, working directory, stdout/stderr, and preceding diagnostics. Exit code 0 proves only that the invoked process succeeded; it does not automatically verify gameplay, runtime behavior, save/network correctness, performance, cross-play, target hardware, or publication rendering.
 
 GitHub Copilot rule: keep repository-wide guidance in `.github/copilot-instructions.md`; use `.github/instructions/*.instructions.md` for path-specific C++/Unreal/build guidance where useful. Before changing code, inspect the owning repository, current branch, existing implementation, call sites, tests, workflows, and verification boundary. Fix the smallest coherent root cause and preserve evidence.
+
+### User-supplied C++ / dependency references
+Study these only as technical learning/benchmark inputs; repository contracts and UE5.8 evidence remain authoritative:
+- https://youtu.be/kZqFS6ldMac
+- https://youtu.be/uerEG_yigco
+- https://youtu.be/Jnwm2DvmyPo
+- https://youtu.be/6y0bp-mnYU0
+- https://github.com/Dlomotion/Echohearts-Rebearth/pull/19
+- https://github.com/Dlomotion/Echohearts-Rebearth/pull/20
+
+Do not copy tutorial/demo architecture blindly into Unreal production. Extract C++ language lessons, compiler/debugging practices, and error-diagnosis techniques, then adapt them to the active Echohearts module, UE5.8 build pipeline, tests, and verification boundary.
+
