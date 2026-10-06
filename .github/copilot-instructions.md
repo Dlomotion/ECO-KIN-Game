@@ -55,3 +55,68 @@ Use `STATIC CHECK PASSED`, `REPOSITORY CONTRACT PASSED`, `CI PREFLIGHT PASSED`, 
 
 ## Final instruction
 When asked to create or fix code, inspect repo context, preserve canon, make the smallest correct change, explain verification status, and route work to the correct Echohearts folder or runtime module.
+
+## C++ study, Echohearts compiler, and PR dependency contract — 2026-10-06
+
+### C++ learning material
+Use the user-supplied C++ tutorial videos and notes as learning/benchmark material for fundamentals such as editor/toolchain setup, variables and built-in types, input/output, operators, conditionals, loops, functions, classes, compilation, linking, and debugging. Do not copy tutorial code into production merely because it compiles.
+
+For production Echohearts code:
+- prefer modern C++20-compatible practices where supported by the active UE5.8 toolchain;
+- use RAII, const-correctness, explicit ownership/lifetime rules, bounded containers, deterministic initialization, and clear error handling;
+- use Unreal types/macros/lifecycle where required by UObject reflection, replication, serialization, assets, delegates, Gameplay Tags, and engine subsystems;
+- do not use `std::cin`/`std::cout` as gameplay UI/input; console Hello-World programs are toolchain smoke tests only;
+- do not assume G++ is the shipping compiler on every target. Use the UE-supported compiler/toolchain for the actual platform.
+
+### Echohearts compiler definition
+"Echohearts Compiler" means the project-specific build/verification driver that validates repository contracts and orchestrates the real Unreal/C++ toolchain. It is NOT a replacement C++ compiler.
+
+Authoritative executable implementation belongs in:
+`Dlomotion/ECHOHEARTS-REBEARTH-BUILD-`
+
+Preferred driver:
+`BuildScripts/EchoheartsCompiler.py`
+
+The driver may:
+1. validate project/module/target naming;
+2. validate required files and Git LFS state;
+3. perform an optional standalone C++ compiler smoke test;
+4. locate/validate the exact UE5.8 installation and Build.version;
+5. invoke UnrealBuildTool and UnrealHeaderTool through supported UE entry points;
+6. run bounded Automation tests;
+7. cook/package an explicit authored map;
+8. launch or hand off to an authorized runtime test;
+9. retain command lines, exit codes, logs, source SHA, package metadata, and evidence manifests.
+
+Do not write a custom C++ frontend/parser/code generator for the game unless the user explicitly requests a separate language-research project. Echohearts gameplay remains UE5.8 C++.
+
+### Exit-code diagnosis
+Never treat exit code 2 as a universal explanation. It is process/tool-specific. Read the failing command, interpreter/compiler output, working directory, checked-out ref, required-file preflight, path casing, arguments, and stderr/stdout immediately above the exit code before changing code or CI.
+
+A passing shell/Python/static command proves only that command passed. It does not prove UHT, UE compilation, runtime, packaging, networking, save behavior, AI, gameplay, cross-play, target hardware, or publication rendering.
+
+### PR #19 / PR #20 dependency boundary
+For `Dlomotion/Echohearts-Rebearth`:
+- PR #19 contains useful UE5.8 naming/build contracts but predates the repository-authority split. Executable runtime/compiler/tooling must be reconciled into the BUILD repository instead of creating a second runtime authority.
+- BUILD PR #10 is the current executable Echohearts compiler/build-driver candidate.
+- PR #20 platform/publication contracts are downstream of the executable foundation for runtime claims, but the EPUB contract lane is independent of UE runtime validation.
+- Do not label any of these VERIFIED without the exact required evidence.
+
+Safe runtime order:
+`BUILD foundation/tooling → clean clone + LFS → UE5.8 UHT/Development Editor build → editor + minimal authored map + PIE → bounded Automation → Development package + packaged launch → Issue #10 humanoid + Eco-Kin runtime proof → 4–6 Eco-Kin slice → save/network/platform hardware validation → exact cross-play/cloud-save pairs`
+
+Publication order:
+`canon-reviewed manuscript → exact EPUB artifact → EPUBCheck/accessibility → named reader/device rendering → checksum/storefront evidence where applicable`
+
+### Code-fix execution behavior
+When asked to create or fix code:
+- inspect the current repository, branch, implementation, tests, logs, and call sites first;
+- search the seven Echohearts repositories before duplicating code;
+- modify the repository that owns the implementation;
+- repair the smallest coherent surface;
+- update/add tests or validation with the fix;
+- run every available static/CI check;
+- preserve the 125-ID Permanent Dex, Vibrance/Density/Harmony/Purity, Anima-Link, Huma-Link where applicable, and all locked canon;
+- report what passed and what remains NOT YET VERIFIED;
+- never hide a failure, suppress a required check, or fabricate runtime evidence.
+
