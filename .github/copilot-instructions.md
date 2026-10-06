@@ -154,3 +154,53 @@ Study these only as technical learning/benchmark inputs; repository contracts an
 
 Do not copy tutorial/demo architecture blindly into Unreal production. Extract C++ language lessons, compiler/debugging practices, and error-diagnosis techniques, then adapt them to the active Echohearts module, UE5.8 build pipeline, tests, and verification boundary.
 
+## Production synchronization, Git/LFS, CI, and code-repair protocol
+
+This protocol is mandatory across the Echohearts repository family. It complements the repository-specific role above and does not replace canon or authority boundaries.
+
+### Repository and branch safety
+- Never run `git init` inside an existing clone. First inspect the repository, default branch, remotes, current branch, working tree, and open PRs.
+- Work on short-lived task/feature/fix branches. Do not make speculative implementation directly on `main`.
+- Preferred loop: inspect current code and docs -> create/checkout task branch -> implement smallest coherent change -> build/lint/test -> inspect diff -> commit intentionally -> push -> pull request -> CI/review -> merge.
+- Never use a blind `git add . && git commit -m "Fix"` workflow. Review staged files and exclude generated, cached, secret, machine-specific, or unrelated files.
+- Do not claim a branch is safe to merge merely because code was generated. Require the repository's actual validation evidence.
+
+### Unreal Engine 5.8 source-control rules
+- Unreal Engine 5.8 is the production runtime target unless the canon/runtime authority is explicitly changed.
+- Before writing UE build automation, discover the real `.uproject`, module names, Target.cs files, Build.cs files, plugins, engine association, runner layout, and platform requirements. Never hard-code placeholder names such as `ProjectEngine.uproject` or an older UE version.
+- Treat `.uasset` and `.umap` as binary assets. Prefer Git LFS for them and for genuinely large production-source binaries such as large FBX/WAV files when repository policy requires it.
+- Do not automatically put every PNG/JPG into LFS. Use repository size/asset policy and file purpose.
+- Do not blanket-ignore the entire Unreal `Build/` directory without inspecting what the project stores there. Generated `Binaries/`, `DerivedDataCache/`, `Intermediate/`, `Saved/`, IDE caches, and machine-local files should normally remain untracked.
+- Reduce binary conflicts with small asset-scoped changes, ownership/locking conventions, and Unreal-native collaboration features such as World Partition / One File Per Actor when appropriate.
+- Never hand-edit binary Unreal assets as text.
+
+### Code study and repair
+- Fix the cause, not the symptom. Start from the exact compiler, UHT, UBT, UAT, test, runtime, networking, packaging, browser, or CI failure.
+- Search the current repository and call sites first. Then consult current official engine/framework documentation and relevant public GitHub issues/samples when needed.
+- Do not paste random third-party fixes. Check API/version compatibility, license, security implications, ownership/authority, threading/lifetime behavior, networking effects, save compatibility, and tests before adapting an idea.
+- C++/Unreal code must respect UObject/reflection/lifecycle rules, module boundaries, API macros, replication authority, RPC validation, prediction/reconciliation, stable IDs, serialization/versioning, async/UObject thread safety, asset loading, World Partition, packaging, and performance budgets.
+- TypeScript/JavaScript code belongs primarily to web/tooling surfaces and must pass the repository's typecheck/lint/build/tests.
+- Python is for tooling, validation, content/data processing, build helpers, or automation unless a repository explicitly defines a runtime role.
+- C# is legacy/prototype/supporting tooling unless an authority document explicitly assigns it a production responsibility. Do not let C# or other prototypes silently replace the Unreal C++ production path.
+- Keep Echohearts gameplay state server-authoritative wherever cheating, ownership, rewards, inventory, combat resolution, persistence, or competitive state requires authority.
+
+### Echohearts systems constraints
+- Preserve the four core game parameters in production gameplay/data contracts: **Vibrance, Density, Harmony, Purity**.
+- Preserve the **Anima-Link** bi-directional strain/damage loop for Eco-Kin and the established **Huma-Link** contract for humanoid-linked interactions where canon assigns it.
+- Preserve the 125-ID Permanent Dex authority. Never auto-promote prototypes, historical names, forms, or external inspiration into new canonical species.
+- Do not import outside franchises, protected designs, proprietary source code, proprietary assets, or franchise-specific narrative identity. External games and repositories are study/benchmark material only.
+
+### Build, CI, and verification
+- Keep existing CI working. Extend it incrementally instead of replacing proven workflows with an unverified monolithic pipeline.
+- A self-hosted UE build runner is acceptable only after the actual engine installation, project target, credentials/permissions, LFS checkout, disk capacity, cache strategy, and security boundary are documented.
+- For Unreal changes, target evidence in this order where applicable: clean checkout + LFS pull -> project/target generation -> UHT/UBT compile -> automation tests -> editor launch/PIE -> dedicated-server/client tests if networked -> cook/package -> packaged runtime -> profiling.
+- For web/tooling changes, run the repository's real install/typecheck/lint/test/build flow.
+- Mark features **VERIFIED** only when the relevant evidence exists. Otherwise use **NOT YET VERIFIED** and state the exact missing test/build/runtime proof.
+- Do not describe code as perfect, production-ready, zero-stutter, secure, compiled, or complete without evidence.
+
+### AI/Copilot working behavior
+- Before changing code, read the nearest source-of-truth docs and repository instructions, then inspect the actual implementation.
+- Prefer focused patches over mass rewrites. Preserve working systems unless evidence justifies replacement.
+- When a task spans repositories, identify which repository owns canon/contracts, executable runtime, web presentation, Eco-Kin support, or legacy/prototype material before editing.
+- If repositories disagree, do not create a parallel solution. Report the conflict and reconcile toward `Dlomotion/Echohearts-Rebearth` for canon/contracts and `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-` for executable runtime/build evidence.
+- Every substantial code change should leave Copilot able to explain: what was wrong, what changed, why the change is safer/correcter, what was tested, and what remains unverified.
