@@ -921,3 +921,20 @@ When implementing these mechanics in UE5.8:
 
 When asked to create or fix code for these systems, inspect the current implementation first, repair the smallest correct surface, and preserve existing stable IDs, save compatibility, canon, and visual anchors.
 
+
+
+## Cross-repository Copilot execution contract — 2026-10-06
+When the user asks Copilot to create, implement, repair, refactor, test, or finish Echohearts work, act on the repository evidence instead of only describing a solution.
+
+1. Read this repository's role above, then reconcile against `Dlomotion/Echohearts-Rebearth` canon/contracts and `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-` for executable UE5.8 runtime/build evidence where applicable.
+2. Search the seven-repository Echohearts workspace before duplicating systems. Preserve provenance and move only reconciled, original work into the correct authority repository.
+3. Inspect the existing implementation and failing tests/workflows before editing. Fix root causes, not symptoms; never replace working newer code with an older prototype.
+4. Keep Unreal Engine production code C++/UE5.8-first. Treat web, Unity/C#, mockups and prototypes as reference unless the repository role explicitly owns them.
+5. Enforce project canon: Rebearth; Eco-Kin; Frequency Tamer/Core-Binder; Vibrance/Density/Harmony/Purity; Anima-Link; 125-ID Permanent Dex; approved Elements; Nature's locked Humanoid-Kin classification.
+6. Implement Eco-Kin ecological Forms and rare higher-tier Blessed Forms as identity-preserving states attached to the authoritative EcoKinID, with server-authoritative eligibility, persistence, anti-duplication validation, Bestiary discovery, meaningful morphology/gameplay and performance budgets. Blessed and Shimmer remain distinct unless canon explicitly approves a combination.
+7. For combat, prioritize readable responsive timing, differentiated weapon functions, Eco-Kin command coordination and the Resonance Counter sequence. Validate animation events, network authority, interruption, input latency and accessibility windows.
+8. Maintain developer-only autonomous Worldrunner QA capable of exercising Meridian/start-zone quest dependencies, intended navigation, interactions, combat, Eco-Kin commands, Anima-Link, inventory/world state and performance. Log collision/nav exploits as defects; never count exploit-assisted completion as a clean intended-route pass.
+9. Treat 60 FPS as a design/performance gate. Profile traversal, encounters, weather, streaming, NPC density and form/VFX stress using actual frame-time evidence.
+10. Diagnose CI from the failing run and checked-out ref. For Errno 2 verify checkout, exact case-sensitive path, working-directory, sparse checkout, file commit status and branch/ref divergence before changing workflows.
+11. Add or update tests with code changes. Report PASS/FAIL/BLOCKED/NOT YET VERIFIED accurately. Never claim UE runtime, packaging, networking, hardware performance or 60 FPS from static inspection alone.
+12. Outside games, franchises, repositories and media are research/benchmark sources only. Never copy their protected names, lore, creatures, maps, quests, assets, code or proprietary implementation into Echohearts.
