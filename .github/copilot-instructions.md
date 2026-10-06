@@ -548,3 +548,11 @@ Preserve this lesson:
 - do not repeatedly rerun an obsolete broken SHA and mistake that historical failure for failure of the current fix;
 - do not claim a passing static infrastructure check proves UE5.8 runtime behavior.
 
+
+## Complete development brief
+
+Read [the complete implementation brief](../docs/ECHOHEARTS_COPILOT_MASTER_DEVELOPMENT_PROMPT.md) for detailed player/NPC/dummy acceptance criteria, all requested code repairs and prototype controls, boundary tests and evidence gates. Current canon files, approved production routing/order and explicit module decisions remain authoritative; the brief does not authorize a competing runtime or module migration.
+
+Chat scratch image paths are not portable repository assets. Preserve original source bytes, approved identities and provenance. file_00000000ed0062309c7d3ff2fce23f01.png remains PENDING IMPORT and must not be claimed as recovered or used.
+
+Installing these instructions does not launch a Copilot agent task or establish runtime verification.
