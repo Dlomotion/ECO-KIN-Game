@@ -4,7 +4,8 @@
 - Repository: `Dlomotion/ECO-KIN-Game`
 - Role: `LEGACY_GAME_SUPPORT`
 - Supporting/legacy game repository. Reconcile useful material into the primary production architecture instead of creating competing canon, modules, Dexes, or gameplay frameworks.
-- Canon/contracts/Dex authority: **Dlomotion/Echohearts-Rebearth**\n- Executable UE5.8 runtime/build/evidence authority: **Dlomotion/ECHOHEARTS-REBEARTH-BUILD-**
+- Canon/contracts/Dex authority: **Dlomotion/Echohearts-Rebearth**
+- Executable UE5.8 runtime/build/evidence authority: **Dlomotion/ECHOHEARTS-REBEARTH-BUILD-**
 - Related repositories:
   - `Dlomotion/echohearts-web`
   - `Dlomotion/Echohearts-Ecokins`
