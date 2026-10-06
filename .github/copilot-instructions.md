@@ -204,3 +204,70 @@ This protocol is mandatory across the Echohearts repository family. It complemen
 - When a task spans repositories, identify which repository owns canon/contracts, executable runtime, web presentation, Eco-Kin support, or legacy/prototype material before editing.
 - If repositories disagree, do not create a parallel solution. Report the conflict and reconcile toward `Dlomotion/Echohearts-Rebearth` for canon/contracts and `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-` for executable runtime/build evidence.
 - Every substantial code change should leave Copilot able to explain: what was wrong, what changed, why the change is safer/correcter, what was tested, and what remains unverified.
+
+## Unified Echohearts creation and code-repair directive — 2026-10-06
+
+This repository participates in one Echohearts: Rebearth production family. GitHub Copilot must help **create requested game work and repair code**, but it must do so inside the established ownership boundaries and evidence gates.
+
+### Repository family and authority
+- `Dlomotion/Echohearts-Rebearth` = canon/story/design/system-contract authority.
+- `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-` = executable UE5.8 runtime/build/evidence authority.
+- `Dlomotion/echohearts-web` = web/presentation/support surface.
+- `Dlomotion/Echohearts-Ecokins` = Eco-Kin support/archive/specialized content.
+- `Dlomotion/ECO-KIN-Game`, `Dlomotion/ECHOHEARTS-REBEARTH-`, and `Dlomotion/Echohearts` = legacy/prototype/support repositories.
+
+When a task spans repositories, inspect all relevant implementations before writing code. Modify the repository that owns the behavior. Do not create duplicate runtime modules, duplicate GDDs, duplicate Dexes, duplicate canon, duplicate save schemas, duplicate networking stacks, or parallel build pipelines.
+
+### Locked game identity
+Preserve:
+- Planet: **Rebearth**.
+- Creature class: **Eco-Kin**.
+- Player class language: **Frequency Tamer / Core-Binder**.
+- Apex entity: **Nature**, a Legendary Humanoid-Kin with conditional Mutations; never "Legendary Monarch".
+- Core attributes: **Vibrance, Density, Harmony, Purity**.
+- **Anima-Link** for Eco-Kin bi-directional combat strain/damage and **Huma-Link** for Humanoid-Kin synchronization/consequence.
+- **A.E.G.I.S.** / Link Device as the rhythm/trust/consent bond and survival/combat interface.
+- 125-ID Permanent Dex as production roster authority; historical/prototype names remain quarantined until approved.
+- Campaign combat is real-time third-person. Resonance Arena can use its own tactical rules.
+- Current party direction: carry up to 8 Eco-Kin, 3 active in battle, no duplicates, subject to current canon/data contracts.
+- Target runtime: **Unreal Engine 5.8 C++** with Blueprint-facing data/assets and secure cross-platform save/profile boundaries.
+
+Candidate story/system intake such as Meridian ancient technology, Meridian Nodes/pyramids, Time-Echo ruins, E.C.O. Sentinel, Cosmo-Seraph/AstraVore-class cosmic material, gardens/care, relic/idol concepts, fusion/reversion ideas, and branching endings must be reconciled against current canon before implementation. Do not let an older draft overwrite current source-of-truth documents.
+
+### Code creation and repair behavior
+Before changing code:
+1. Read nearest repository/Copilot instructions and authoritative project docs.
+2. Inspect the actual failing file, call sites, tests, build scripts, workflows, branch, and open related PR/issues.
+3. Reproduce or precisely identify the failure from compiler/UHT/UBT/UAT/test/runtime/log evidence when available.
+4. Search current official documentation and reputable public GitHub samples/issues when needed; adapt principles, never copy proprietary code or franchise identity.
+5. Fix the smallest coherent root cause. Preserve working APIs and save/data compatibility unless migration is explicitly required.
+6. Add or update tests/validation with the fix.
+7. Run every validation available in the repository.
+8. Report exactly what passed and what remains **NOT YET VERIFIED**.
+
+Never hide errors, disable required checks to make CI green, fabricate engine APIs, invent build success, or describe code as perfect/production-ready without evidence.
+
+### Language ownership
+- **C++**: UE5.8 production gameplay/runtime, replication, AI, systems, save/network logic.
+- **TypeScript/JavaScript**: web and browser/tooling surfaces; prefer TypeScript for maintainability.
+- **Python**: build helpers, validators, data/content processing, automation, evidence tooling.
+- **C#**: legacy/prototype/supporting tooling only unless an authority document explicitly assigns a production responsibility. It must not silently replace UE5.8 C++.
+
+### Engineering quality gates
+Audit as applicable: UHT/reflection syntax, module and Build.cs dependencies, API macros, UObject lifetime, ownership/authority, RPC validation, prediction/reconciliation, replication relevancy/dormancy, finite/bounds checks, stable IDs, serialization/version migration, threading/UObject access, async asset loading, World Partition, performance/memory, accessibility, security/anti-cheat surfaces, packaging, platform behavior, cloud/save boundaries, UI event bindings, AI/StateTree/Behavior Trees, animation/VFX/audio hooks, and data/schema integrity.
+
+Trace major gameplay work end-to-end:
+**input -> authority -> state mutation -> replication/save -> UI/VFX/audio feedback**.
+
+### Game-creation behavior
+Every new feature must connect to existing gameplay, story, world state, quests, Eco-Kin ecology, UI/UX, audio/VFX, progression, save/network behavior, or production tracking. Avoid feature dumps that cannot be implemented or verified. Keep all visual/narrative/gameplay work original to Echohearts; outside games are benchmark material only and never production nomenclature or creative identity.
+
+### Evidence vocabulary
+Use:
+- `STATIC CHECK PASSED`
+- `REPOSITORY CONTRACT PASSED`
+- `CI PREFLIGHT PASSED`
+- `NOT VERIFIED — UE BUILD/RUNTIME EVIDENCE REQUIRED`
+
+Only use `VERIFIED` when the specific claim is backed by the required build/test/runtime/profile evidence.
+
