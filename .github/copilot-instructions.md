@@ -207,3 +207,19 @@ Trace gameplay changes end-to-end:
 
 Use `STATIC CHECK PASSED`, `REPOSITORY CONTRACT PASSED`, `CI PREFLIGHT PASSED`, and `NOT VERIFIED — UE BUILD/RUNTIME EVIDENCE REQUIRED`. Use `VERIFIED` only with matching evidence.
 
+
+
+## Current design synchronization — Items, Upgrade Highlights, and Echo Eggs
+
+Read `.github/instructions/echohearts-current-design.instructions.md` before implementing or repairing current inventory, marketplace, Echo Egg, Sanctuary, A.E.G.I.S., combat, UI, photo/archive, quest tracking, or upgrade-highlight work.
+
+Canonical design sources are owned by `Dlomotion/Echohearts-Rebearth`:
+- `04_Systems/Inventory/ECHOHEARTS_MASTER_ITEMS_MATERIALS_REGISTRY_2026-10-06.md` — 737 categorized records / 694 unique named entries / 28 categories, with explicit current/legacy/retired status.
+- `04_Systems/ECHO_EGGS_AND_UPGRADE_HIGHLIGHTS_2026-10-06.md` — Echo Egg variants, incubation rules, upgrade pillars, UI direction, repository ownership, and UE5.8 data/runtime contract.
+
+Do not create a second item canon, a second Egg registry, a second Permanent Dex, or a parallel runtime implementation. Preserve each item's registry status, the 125-ID Permanent Dex, Vibrance/Density/Harmony/Purity, Kindling, A.E.G.I.S., the Anima-Link loop, and the server-authoritative verification rules.
+
+The latest visual concepts establish an original dark Rebearth/bioluminescent/gold-line UI direction for:
+- **Echohearts: Rebearth — Upgrade Highlights**
+- **Echo Egg Collection**
+Use those concepts as art-direction input only; code and UI must remain accessible, scalable, and original.
