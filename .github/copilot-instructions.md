@@ -98,7 +98,7 @@ A passing shell/Python/static command proves only that command passed. It does n
 ### PR #19 / PR #20 dependency boundary
 For `Dlomotion/Echohearts-Rebearth`:
 - PR #19 contains useful UE5.8 naming/build contracts but predates the repository-authority split. Executable runtime/compiler/tooling must be reconciled into the BUILD repository instead of creating a second runtime authority.
-- BUILD PR #10 is the current executable Echohearts compiler/build-driver candidate.
+- BUILD PR #10 is merged in `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-` as the Echohearts compiler/build-driver tooling baseline; UE5.8 runtime remains NOT YET VERIFIED.
 - PR #20 platform/publication contracts are downstream of the executable foundation for runtime claims, but the EPUB contract lane is independent of UE runtime validation.
 - Do not label any of these VERIFIED without the exact required evidence.
 
@@ -135,7 +135,7 @@ Study and apply the transferable fundamentals: editor/toolchain setup, preproces
 Compiler boundary:
 - The Echohearts compiler is a project-specific build/verification driver, not a replacement C++ frontend or native machine-code compiler.
 - UE5.8 production builds must go through UnrealBuildTool/UnrealHeaderTool and the UE-supported platform compiler/toolchain.
-- The executable compiler/build-driver candidate is BUILD PR #10: https://github.com/Dlomotion/ECHOHEARTS-REBEARTH-BUILD-/pull/10
+- The executable compiler/build-driver tooling baseline was merged through BUILD PR #10: https://github.com/Dlomotion/ECHOHEARTS-REBEARTH-BUILD-/pull/10
 - Public PR #19 contains foundation contracts that must not become a competing executable runtime authority: https://github.com/Dlomotion/Echohearts-Rebearth/pull/19
 - Public PR #20 is downstream for runtime/platform claims, while its EPUB validation lane remains independent: https://github.com/Dlomotion/Echohearts-Rebearth/pull/20
 
