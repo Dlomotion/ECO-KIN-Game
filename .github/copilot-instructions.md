@@ -379,3 +379,29 @@ When working on Echohearts missions/quests/objectives:
 
 Canonical contract: `Dlomotion/Echohearts-Rebearth/04_Systems/MISSION_SYSTEM_ARCHITECTURE_2026-10-06.md`.
 The mission system is NOT YET UE5.8 VERIFIED and must not bypass the current foundation → Issue #10 → 4–6 Eco-Kin vertical-slice order.
+
+
+## Graph, binary, and function-error repair — 2026-10-06
+
+For Codex/Copilot code repair, route executable UE5.8 diagnostics to `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-`, where the graph/binary tooling is now merged.
+
+Use this sequence when applicable:
+1. Preserve the raw failing command, working directory, exit code, stdout/stderr, and log.
+2. Run `python BuildScripts/EchoheartsCompiler.py diagnose --log <log> --exit-code <code>` to classify the owning layer. Never assign a universal meaning to exit code 2.
+3. Run `python BuildScripts/EchoheartsCompiler.py graph` to generate JSON, Graphviz DOT, and Mermaid dependency graphs for Game/Editor targets, the `Echohearts` runtime module, Build.cs dependencies, and project-local C++ include edges.
+4. For unresolved/missing functions, compare declaration vs definition, class/namespace scope, parameters, const/ref qualifiers, generated/reflection boundaries, translation-unit inclusion, and module visibility before editing.
+5. For missing output, verify the exact target/config/platform, expected binary filename, output directory, and Unreal `.modules` mapping.
+6. A real Win64 build should build both `EchoheartsRebearthEditor` and `EchoheartsRebearth`.
+7. After that real build, run `python BuildScripts/EchoheartsCompiler.py binary-audit`. Binary/build evidence is accepted only when expected PE files exist and the `Echohearts` module is mapped by an Unreal modules manifest to an existing binary.
+8. Fix the language/toolchain that owns the error; do not translate a C++/UHT/linker problem into an unrelated language.
+9. Static graph generation and diagnostic tests are not UE5.8 runtime verification.
+
+Expected Win64 build evidence:
+- `Binaries/Win64/UnrealEditor-Echohearts.dll`
+- `Binaries/Win64/EchoheartsRebearth.exe`
+- valid PE signatures
+- Unreal `.modules` linkage for `Echohearts`
+
+Current merged BUILD tooling baseline: `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-` commit `2f7ef6fe41c4a212bed080d1f2ce5816b6ec0443`.
+
+Do not claim editor launch, PIE, packaged launch, gameplay, save/networking, AI, performance, or platform verification from binary presence alone.
