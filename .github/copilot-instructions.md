@@ -120,3 +120,25 @@ When asked to create or fix code:
 - report what passed and what remains NOT YET VERIFIED;
 - never hide a failure, suppress a required check, or fabricate runtime evidence.
 
+
+
+## C++ study source URLs and Copilot execution note — 2026-10-06
+
+Use these user-supplied study references as C++/toolchain learning material, not as production code to copy blindly:
+- https://youtu.be/kZqFS6ldMac?is=qo9eHn3vHv6peQgg
+- https://youtu.be/uerEG_yigco?is=dpMs73KWFKDtBXuA
+- https://youtu.be/Jnwm2DvmyPo?is=FV6-0VF5t6EjFTrx
+- https://youtu.be/6y0bp-mnYU0?is=5U6tNS674LbakYU5
+
+Study and apply the transferable fundamentals: editor/toolchain setup, preprocessing/compilation/linking, variables and built-in types, console I/O for standalone smoke tools, operators, conditionals, loops, functions, classes, translation units, headers, ownership/lifetime, diagnostics, and debugging. For Unreal production code, translate those fundamentals into UE5.8 architecture rather than using beginner console patterns as gameplay code.
+
+Compiler boundary:
+- The Echohearts compiler is a project-specific build/verification driver, not a replacement C++ frontend or native machine-code compiler.
+- UE5.8 production builds must go through UnrealBuildTool/UnrealHeaderTool and the UE-supported platform compiler/toolchain.
+- The executable compiler/build-driver candidate is BUILD PR #10: https://github.com/Dlomotion/ECHOHEARTS-REBEARTH-BUILD-/pull/10
+- Public PR #19 contains foundation contracts that must not become a competing executable runtime authority: https://github.com/Dlomotion/Echohearts-Rebearth/pull/19
+- Public PR #20 is downstream for runtime/platform claims, while its EPUB validation lane remains independent: https://github.com/Dlomotion/Echohearts-Rebearth/pull/20
+
+Error-diagnosis rule: never infer a universal meaning from exit code 2. Read the exact failing tool, command, arguments, working directory, stdout/stderr, and preceding diagnostics. Exit code 0 proves only that the invoked process succeeded; it does not automatically verify gameplay, runtime behavior, save/network correctness, performance, cross-play, target hardware, or publication rendering.
+
+GitHub Copilot rule: keep repository-wide guidance in `.github/copilot-instructions.md`; use `.github/instructions/*.instructions.md` for path-specific C++/Unreal/build guidance where useful. Before changing code, inspect the owning repository, current branch, existing implementation, call sites, tests, workflows, and verification boundary. Fix the smallest coherent root cause and preserve evidence.
