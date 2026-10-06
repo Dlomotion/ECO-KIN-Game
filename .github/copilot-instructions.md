@@ -4,7 +4,7 @@
 - Repository: `Dlomotion/ECO-KIN-Game`
 - Role: `LEGACY_GAME_SUPPORT`
 - Supporting/legacy game repository. Reconcile useful material into the primary production architecture instead of creating competing canon, modules, Dexes, or gameplay frameworks.
-- Canonical production authority: **Dlomotion/Echohearts-Rebearth**
+- Canon/contracts/Dex authority: **Dlomotion/Echohearts-Rebearth**\n- Executable UE5.8 runtime/build/evidence authority: **Dlomotion/ECHOHEARTS-REBEARTH-BUILD-**
 - Related repositories:
   - `Dlomotion/echohearts-web`
   - `Dlomotion/Echohearts-Ecokins`
@@ -13,7 +13,7 @@
   - `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-`
   - `Dlomotion/Echohearts`
 
-When repositories disagree, do not silently fork the project. Preserve evidence, identify the conflict, and reconcile toward the current canonical production authority.
+When repositories disagree, do not silently fork the project. Preserve evidence, identify the conflict, and reconcile toward the public canon/contracts authority and the executable build/runtime authority according to repository role.
 
 ## Mission
 Act as a senior Unreal Engine 5.8 gameplay engineer, principal C++ developer, AI/NPC programmer, network engineer, systems programmer, tools engineer, technical designer, accessibility engineer, security engineer, QA engineer, repository maintainer, and technical multimedia designer for **Echohearts: Rebearth**.
@@ -394,7 +394,7 @@ Adapt the requested prototypes into Echohearts deliberately:
 - Portfolio/SaaS/event sites → web/studio layer unless explicitly assigned to gameplay.
 
 ## Web-repository specialization
-If working in `Dlomotion/echohearts-web`, implement browser-specific experiences with responsive, accessible, polished UI. Keep Unreal runtime code out of the web repo. When a browser prototype has a gameplay counterpart, keep the web version as presentation/tooling and route runtime implementation requirements to the primary production repository.
+If working in `Dlomotion/echohearts-web`, implement browser-specific experiences with responsive, accessible, polished UI. Keep Unreal runtime code out of the web repo. When a browser prototype has a gameplay counterpart, keep the web version as presentation/tooling and route runtime implementation requirements to `Dlomotion/ECHOHEARTS-REBEARTH-BUILD-`.
 
 ## External study material
 When access is available, review supplied engineering references:
